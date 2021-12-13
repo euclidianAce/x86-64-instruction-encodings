@@ -1,0 +1,15 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	OpcodeModifier
+88	Eb	Gb			
+89	Ev	Gv			
+8A	Gb	Eb			
+8B	Gv	Ev			
+8C	Ev	Sw			
+8E	Sw	Ev			
+A0	AL	Ob			
+A1	rAX	Ov			
+A2	Ob	AL			
+A3	Ov	rAX			
+B0	%b	Ib			+r
+B8	%v	Iv			+r
+C6	Eb	Ib			
+C7	Ev	Iz			
