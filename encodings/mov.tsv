@@ -9,7 +9,7 @@ A0	AL	Ob
 A1	rAX	Ov			
 A2	Ob	AL			
 A3	Ov	rAX			
-B0	%b	Ib			+r
-B8	%v	Iv			+r
+B0	%b	Ib			/r
+B8	%v	Iv			/r
 C6	Eb	Ib			
 C7	Ev	Iz			
