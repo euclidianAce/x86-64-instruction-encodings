@@ -18,5 +18,4 @@ The first row contains the names of the fields
     Additional encoding information not present in the Opcode nor Operands.
 
     The format is the same as described in the `Intel® 64 and IA-32 Architectures Software Developer’s Manual`, Volume 2, Chapter 3.1.1.1. A summary is provided here for convenience.
-     - `/r`: the ModRM byte has a register operand and a r/m operand.
      - `/0`, `/1`, `/2`, `/3`, `/4`, `/5`, `/6` `/7`: The 3 `reg` bits of the ModRM byte are an extension of the opcode, rather than an operand. The extension is given by the digit after the slash. i.e. `/3` -> `reg = 0b011`.

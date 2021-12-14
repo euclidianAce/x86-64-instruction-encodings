@@ -9,7 +9,7 @@ A0	$al	Ob
 A1	$rax	Ov			
 A2	Ob	$al			
 A3	Ov	$rax			
-B0	%b	Ib			/r
-B8	%v	Iv			/r
+B0	%b	Ib			
+B8	%v	Iv			
 C6	Eb	Ib			
 C7	Ev	Iz			
