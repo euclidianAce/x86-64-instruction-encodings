@@ -3,8 +3,8 @@ Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
 01	Ev	Gv			
 02	Gb	Eb			
 03	Gv	Ev			
-04	AL	Ib			
-05	rAX	Iz			
+04	$al	Ib			
+05	$rax	Iz			
 80	Eb	Ib			/0
 81	Ev	Iz			/0
 82	Eb	Ib			/0

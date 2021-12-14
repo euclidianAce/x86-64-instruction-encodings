@@ -5,10 +5,10 @@ Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
 8B	Gv	Ev			
 8C	Ev	Sw			
 8E	Sw	Ev			
-A0	AL	Ob			
-A1	rAX	Ov			
-A2	Ob	AL			
-A3	Ov	rAX			
+A0	$al	Ob			
+A1	$rax	Ov			
+A2	Ob	$al			
+A3	Ov	$rax			
 B0	%b	Ib			/r
 B8	%v	Iv			/r
 C6	Eb	Ib			
