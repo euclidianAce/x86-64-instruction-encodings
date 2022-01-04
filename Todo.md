@@ -267,7 +267,7 @@
 - [ ] MULSS — Multiply Scalar Single-Precision Floating-Point Values
 - [ ] MULX — Unsigned Multiply Without Affecting Flags
 - [ ] MWAIT — Monitor Wait
-- [ ] NEG — Two's Complement Negation
+- [x] NEG — Two's Complement Negation
 - [ ] NOP — No Operation
 - [x] NOT — One's Complement Negation
 - [ ] OR — Logical Inclusive OR
