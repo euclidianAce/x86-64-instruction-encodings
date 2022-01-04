@@ -5,7 +5,6 @@ The first row contains the names of the fields
  - Opcode
    The hexadecimal opcode for the instruction. May be up to 3 comma separated bytes.
 
-
  - Operand1, Operand2, Operand3, Operand4
    The encodings of the operands to the instruction.
 
