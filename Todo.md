@@ -171,7 +171,7 @@
 - [ ] IDIV — Signed Divide
 - [ ] IMUL — Signed Multiply
 - [ ] IN — Input from Port
-- [ ] INC — Increment by 1
+- [x] INC — Increment by 1
 - [ ] INS/INSB/INSW/INSD — Input from Port to String
 - [ ] INSERTPS — Insert Scalar Single-Precision Floating-Point Value
 - [ ] INT n/INTO/INT 3 — Call to Interrupt Procedure
