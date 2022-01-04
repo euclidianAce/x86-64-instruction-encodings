@@ -269,7 +269,7 @@
 - [ ] MWAIT — Monitor Wait
 - [ ] NEG — Two's Complement Negation
 - [ ] NOP — No Operation
-- [ ] NOT — One's Complement Negation
+- [x] NOT — One's Complement Negation
 - [ ] OR — Logical Inclusive OR
 - [ ] ORPD — Bitwise Logical OR of Packed Double Precision Floating-Point Values
 - [ ] ORPS — Bitwise Logical OR of Packed Single Precision Floating-Point Values
