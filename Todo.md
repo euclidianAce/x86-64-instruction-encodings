@@ -180,7 +180,7 @@
 - [ ] INVPCID — Invalidate Process-Context Identifier
 - [ ] IRET/IRETD — Interrupt Return
 - [ ] Jcc — Jump if Condition Is Met
-- [ ] JMP — Jump
+- [x] JMP — Jump
 - [ ] KADDW/KADDB/KADDQ/KADDD — ADD Two Masks
 - [ ] KANDW/KANDB/KANDQ/KANDD — Bitwise Logical AND Masks
 - [ ] KANDNW/KANDNB/KANDNQ/KANDND — Bitwise Logical AND NOT Masks
