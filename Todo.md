@@ -20,7 +20,7 @@
 - [ ] AESENCLAST — Perform Last Round of an AES Encryption Flow
 - [ ] AESIMC — Perform the AES InvMixColumn Transformation
 - [ ] AESKEYGENASSIST — AES Round Key Generation Assist
-- [ ] AND — Logical AND
+- [x] AND — Logical AND
 - [ ] ANDN — Logical AND NOT
 - [ ] ANDPD — Bitwise Logical AND of Packed Double Precision Floating-Point Values
 - [ ] ANDPS — Bitwise Logical AND of Packed Single Precision Floating-Point Values
@@ -50,7 +50,7 @@
 - [ ] BTR — Bit Test and Reset
 - [ ] BTS — Bit Test and Set
 - [ ] BZHI — Zero High Bits Starting with Specified Bit Position
-- [ ] CALL — Call Procedure
+- [x] CALL — Call Procedure
 - [ ] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] CLAC — Clear AC Flag in EFLAGS Register
 - [ ] CLC — Clear Carry Flag
@@ -270,7 +270,7 @@
 - [x] NEG — Two's Complement Negation
 - [x] NOP — No Operation
 - [x] NOT — One's Complement Negation
-- [ ] OR — Logical Inclusive OR
+- [x] OR — Logical Inclusive OR
 - [ ] ORPD — Bitwise Logical OR of Packed Double Precision Floating-Point Values
 - [ ] ORPS — Bitwise Logical OR of Packed Single Precision Floating-Point Values
 - [ ] OUT — Output to Port
