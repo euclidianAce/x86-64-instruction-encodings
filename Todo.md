@@ -268,7 +268,7 @@
 - [ ] MULX — Unsigned Multiply Without Affecting Flags
 - [ ] MWAIT — Monitor Wait
 - [x] NEG — Two's Complement Negation
-- [ ] NOP — No Operation
+- [x] NOP — No Operation
 - [x] NOT — One's Complement Negation
 - [ ] OR — Logical Inclusive OR
 - [ ] ORPD — Bitwise Logical OR of Packed Double Precision Floating-Point Values

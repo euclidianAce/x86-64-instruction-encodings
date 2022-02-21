@@ -1,0 +1,3 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
+90					
+0F,1F	Ev				/0
