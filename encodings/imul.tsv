@@ -1,0 +1,6 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
+F6	Eb				/5
+F7	Ev				/5
+0F,AF	Gv	Ev			/r
+6B	Gv	Ev	Ib		/r
+69	Gv	Ev	Iz		/r
