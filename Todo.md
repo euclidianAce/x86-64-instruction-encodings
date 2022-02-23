@@ -425,7 +425,7 @@
 - [ ] SYSENTER — Fast System Call
 - [ ] SYSEXIT — Fast Return from Fast System Call
 - [ ] SYSRET — Return From Fast System Call
-- [ ] TEST — Logical Compare
+- [x] TEST — Logical Compare
 - [ ] TZCNT — Count the Number of Trailing Zero Bits
 - [ ] UCOMISD — Unordered Compare Scalar Double-Precision Floating-Point Values and Set EFLAGS
 - [ ] UCOMISS — Unordered Compare Scalar Single-Precision Floating-Point Values and Set EFLAGS
