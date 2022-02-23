@@ -627,3 +627,7 @@
 - [ ] XSAVEOPT — Save Processor Extended States Optimized
 - [ ] XSAVES — Save Processor Extended States Supervisor
 - [ ] XSETBV — Set Extended Control Register
+
+# Additional data to encode
+ - Certain instructions are invalid in 64 bit mode
+ - It should probably be noted somewhere that `$rax` usually means any of `$ax`, `$eax`, or `$rax`
