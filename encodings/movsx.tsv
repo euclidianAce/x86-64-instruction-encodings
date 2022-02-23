@@ -1,0 +1,4 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
+0F,BE	Gv	Eb			/r
+0F,BF	Gv	Ew			/r
+63	Gv	Ev			/r
