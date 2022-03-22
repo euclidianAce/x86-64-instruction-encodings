@@ -1,10 +1,14 @@
+# `Jcc` and `SETcc`: Jump and Set Byte on Condition
+
 `Jcc` and `SETcc` instruction mnemonics will often describe the same underlying
 instruction (e.g. `jnbe` (jump if not below or equal) is the same as `ja` (jump
 if above)). This document enumerates each condition that is tested and each
 mnemonic that tests it.
 
 # `above` vs `greater` etc.
-Certain flags will be describe with words that appear to mean the same thing, such as `above` and `greater`, or `below` and `less`. These refer to the signed and unsigned comparisons as outlined in the table below:
+Certain flags will be describe with words that appear to mean the same thing,
+such as `above` and `greater`, or `below` and `less`. These refer to the signed
+and unsigned comparisons as outlined in the table below:
 
 | word    | signedness |
 ------------------------
