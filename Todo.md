@@ -165,7 +165,7 @@
 - [ ] FYL2XP1 — Compute y * log2(x +1)
 - [ ] HADDPD — Packed Double-FP Horizontal Add
 - [ ] HADDPS — Packed Single-FP Horizontal Add
-- [ ] HLT — Halt
+- [x] HLT — Halt
 - [ ] HSUBPD — Packed Double-FP Horizontal Subtract
 - [ ] HSUBPS — Packed Single-FP Horizontal Subtract
 - [ ] IDIV — Signed Divide
@@ -179,7 +179,7 @@
 - [ ] INVLPG — Invalidate TLB Entries
 - [ ] INVPCID — Invalidate Process-Context Identifier
 - [ ] IRET/IRETD — Interrupt Return
-- [ ] Jcc — Jump if Condition Is Met
+- [x] Jcc — Jump if Condition Is Met
 - [x] JMP — Jump
 - [ ] KADDW/KADDB/KADDQ/KADDD — ADD Two Masks
 - [ ] KANDW/KANDB/KANDQ/KANDD — Bitwise Logical AND Masks
@@ -387,7 +387,7 @@
 - [ ] SARX/SHLX/SHRX — Shift Without Affecting Flags
 - [ ] SBB — Integer Subtraction with Borrow
 - [ ] SCAS/SCASB/SCASW/SCASD — Scan String
-- [ ] SETcc — Set Byte on Condition
+- [x] SETcc — Set Byte on Condition
 - [ ] SFENCE — Store Fence
 - [ ] SGDT — Store Global Descriptor Table Register
 - [ ] SHA1RNDS4 — Perform Four Rounds of SHA1 Operation
