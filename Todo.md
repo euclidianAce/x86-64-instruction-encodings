@@ -96,7 +96,7 @@
 - [ ] CVTTPS2PI — Convert with Truncation Packed Single-Precision FP Values to Packed Dword Integers
 - [ ] CVTTSD2SI — Convert with Truncation Scalar Double-Precision Floating-Point Value to Signed Integer
 - [ ] CVTTSS2SI — Convert with Truncation Scalar Single-Precision Floating-Point Value to Integer
-- [ ] CWD/CDQ/CQO — Convert Word to Doubleword/Convert Doubleword to Quadword
+- [x] CWD/CDQ/CQO — Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] DAA — Decimal Adjust AL after Addition
 - [ ] DAS — Decimal Adjust AL after Subtraction
 - [x] DEC — Decrement by 1
@@ -168,8 +168,8 @@
 - [x] HLT — Halt
 - [ ] HSUBPD — Packed Double-FP Horizontal Subtract
 - [ ] HSUBPS — Packed Single-FP Horizontal Subtract
-- [ ] IDIV — Signed Divide
-- [ ] IMUL — Signed Multiply
+- [x] IDIV — Signed Divide
+- [x] IMUL — Signed Multiply
 - [ ] IN — Input from Port
 - [x] INC — Increment by 1
 - [ ] INS/INSB/INSW/INSD — Input from Port to String
