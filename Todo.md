@@ -51,7 +51,7 @@
 - [ ] BTS — Bit Test and Set
 - [ ] BZHI — Zero High Bits Starting with Specified Bit Position
 - [x] CALL — Call Procedure
-- [ ] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
+- [x] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] CLAC — Clear AC Flag in EFLAGS Register
 - [ ] CLC — Clear Carry Flag
 - [ ] CLD — Clear Direction Flag
