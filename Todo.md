@@ -53,7 +53,7 @@
 - [x] CALL — Call Procedure
 - [x] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] CLAC — Clear AC Flag in EFLAGS Register
-- [ ] CLC — Clear Carry Flag
+- [x] CLC — Clear Carry Flag
 - [ ] CLD — Clear Direction Flag
 - [ ] CLFLUSH — Flush Cache Line
 - [ ] CLFLUSHOPT — Flush Cache Line Optimized
