@@ -330,7 +330,7 @@
 - [ ] PMULUDQ — Multiply Packed Unsigned Doubleword Integers
 - [x] POP — Pop a Value from the Stack
 - [ ] POPA/POPAD — Pop All General-Purpose Registers
-- [ ] POPCNT — Return the Count of Number of Bits Set to 1
+- [x] POPCNT — Return the Count of Number of Bits Set to 1
 - [ ] POPF/POPFD/POPFQ — Pop Stack into EFLAGS Register
 - [ ] POR — Bitwise Logical OR
 - [ ] PREFETCHh — Prefetch Data Into Caches
