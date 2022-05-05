@@ -54,7 +54,7 @@
 - [x] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] CLAC — Clear AC Flag in EFLAGS Register
 - [x] CLC — Clear Carry Flag
-- [ ] CLD — Clear Direction Flag
+- [x] CLD — Clear Direction Flag
 - [ ] CLFLUSH — Flush Cache Line
 - [ ] CLFLUSHOPT — Flush Cache Line Optimized
 - [ ] CLI — Clear Interrupt Flag
