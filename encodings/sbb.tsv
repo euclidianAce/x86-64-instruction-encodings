@@ -1,0 +1,11 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
+18	Eb	Gb			/r
+19	Ev	Gv			/r
+1A	Gb	Eb			/r
+1B	Gv	Ev			/r
+1C	$al	Ib			
+1D	$rax	Iz			
+80	Eb	Ib			/3
+81	Ev	Iz			/3
+82	Eb	Ib			/3
+83	Ev	Ib			/3

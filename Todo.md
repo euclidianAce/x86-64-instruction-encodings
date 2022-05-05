@@ -385,7 +385,7 @@
 - [ ] SAHF — Store AH into Flags
 - [ ] SAL/SAR/SHL/SHR — Shift
 - [ ] SARX/SHLX/SHRX — Shift Without Affecting Flags
-- [ ] SBB — Integer Subtraction with Borrow
+- [x] SBB — Integer Subtraction with Borrow
 - [ ] SCAS/SCASB/SCASW/SCASD — Scan String
 - [x] SETcc — Set Byte on Condition
 - [ ] SFENCE — Store Fence
