@@ -57,7 +57,7 @@
 - [x] CLD — Clear Direction Flag
 - [ ] CLFLUSH — Flush Cache Line
 - [ ] CLFLUSHOPT — Flush Cache Line Optimized
-- [ ] CLI — Clear Interrupt Flag
+- [x] CLI — Clear Interrupt Flag
 - [ ] CLTS — Clear Task-Switched Flag in CR0
 - [ ] CLWB — Cache Line Write Back
 - [ ] CMC — Complement Carry Flag
