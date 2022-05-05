@@ -19,3 +19,6 @@ The first row contains the names of the fields
 
     The format is the same as described in the `Intel® 64 and IA-32 Architectures Software Developer’s Manual Volume 2` in Chapter `3.1.1.1`. A summary is provided here for convenience.
      - `/0`, `/1`, `/2`, `/3`, `/4`, `/5`, `/6` `/7`: The 3 `reg` bits of the ModRM byte are an extension of the opcode, rather than an operand. The extension is given by the digit after the slash. i.e. `/3` -> `reg = 0b011`.
+
+ - ForcedPrefix
+   - Some instructions have a mandatory prefix that can't just be prepended to the Opcode field. e.g. `popcnt`

@@ -1,11 +1,11 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
-30	Eb	Gb			
-31	Ev	Gv			
-32	Gb	Eb			
-33	Gv	Ev			
-34	$al	Ib			
-35	$rax	Iz			
-80	Eb	Ib			/6
-81	Ev	Iz			/6
-82	Eb	Ib			/6
-83	Ev	Ib			/6
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+30	Eb	Gb				
+31	Ev	Gv				
+32	Gb	Eb				
+33	Gv	Ev				
+34	$al	Ib				
+35	$rax	Iz				
+80	Eb	Ib			/6	
+81	Ev	Iz			/6	
+82	Eb	Ib			/6	
+83	Ev	Ib			/6	

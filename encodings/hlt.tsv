@@ -1,2 +1,2 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
-F4					
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+F4						

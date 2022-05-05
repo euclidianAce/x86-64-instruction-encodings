@@ -1,3 +1,3 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
-9A	Ap				
-FF	Ep				/3
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+9A	Ap					
+FF	Ep				/3	

@@ -1,3 +1,3 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
-C2	Iw				
-C3					
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+C2	Iw					
+C3						

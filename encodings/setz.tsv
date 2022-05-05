@@ -1,2 +1,2 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
-0F,94	Eb				
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+0F,94	Eb					

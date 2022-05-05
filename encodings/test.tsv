@@ -1,7 +1,7 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier
-A8	$al	Ib			
-A9	$rax	Iz			
-F6	Eb				/0
-F7	Ev				/0
-84	Eb	Gb			/r
-85	Ev	Gb			/r
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+A8	$al	Ib				
+A9	$rax	Iz				
+F6	Eb				/0	
+F7	Ev				/0	
+84	Eb	Gb			/r	
+85	Ev	Gb			/r	
