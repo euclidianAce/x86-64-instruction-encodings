@@ -411,7 +411,7 @@
 - [ ] STAC — Set AC Flag in EFLAGS Register
 - [x] STC — Set Carry Flag
 - [x] STD — Set Direction Flag
-- [ ] STI — Set Interrupt Flag
+- [x] STI — Set Interrupt Flag
 - [ ] STMXCSR — Store MXCSR Register State
 - [ ] STOS/STOSB/STOSW/STOSD/STOSQ — Store String
 - [ ] STR — Store Task Register
