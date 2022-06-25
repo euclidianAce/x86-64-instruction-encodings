@@ -383,7 +383,7 @@
 - [ ] RSQRTPS — Compute Reciprocals of Square Roots of Packed Single-Precision Floating-Point Values
 - [ ] RSQRTSS — Compute Reciprocal of Square Root of Scalar Single-Precision Floating-Point Value
 - [ ] SAHF — Store AH into Flags
-- [ ] SAL/SAR/SHL/SHR — Shift
+- [x] SAL/SAR/SHL/SHR — Shift
 - [ ] SARX/SHLX/SHRX — Shift Without Affecting Flags
 - [x] SBB — Integer Subtraction with Borrow
 - [ ] SCAS/SCASB/SCASW/SCASD — Scan String

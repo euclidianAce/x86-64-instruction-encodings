@@ -1,0 +1,7 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+C0	Eb	Ib			/7	
+C1	Ev	Ib			/7	
+D0	Eb				/7	
+D1	Ev				/7	
+D2	Eb	$cl			/7	
+D3	Ev	$cl			/7	
