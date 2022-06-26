@@ -60,7 +60,7 @@
 - [x] CLI — Clear Interrupt Flag
 - [ ] CLTS — Clear Task-Switched Flag in CR0
 - [ ] CLWB — Cache Line Write Back
-- [ ] CMC — Complement Carry Flag
+- [x] CMC — Complement Carry Flag
 - [ ] CMOVcc — Conditional Move
 - [x] CMP — Compare Two Operands
 - [ ] CMPPD — Compare Packed Double-Precision Floating-Point Values
