@@ -1,0 +1,5 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+86	Eb	Gb				
+87	Ev	Gv				
+90	$rax	%v				
+90	%v	$rax				

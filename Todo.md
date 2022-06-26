@@ -613,7 +613,7 @@
 - [ ] XABORT — Transactional Abort
 - [ ] XADD — Exchange and Add
 - [ ] XBEGIN — Transactional Begin
-- [ ] XCHG — Exchange Register/Memory with Register
+- [x] XCHG — Exchange Register/Memory with Register
 - [ ] XEND — Transactional End
 - [ ] XGETBV — Get Value of Extended Control Register
 - [ ] XLAT/XLATB — Table Look-up Translation
