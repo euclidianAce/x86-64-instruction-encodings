@@ -1,0 +1,3 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
+0F,B0	Eb	Gb				
+0F,B1	Ev	Gv				

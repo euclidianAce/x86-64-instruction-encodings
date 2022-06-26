@@ -68,7 +68,7 @@
 - [ ] CMPS/CMPSB/CMPSW/CMPSD/CMPSQ — Compare String Operands
 - [ ] CMPSD — Compare Scalar Double-Precision Floating-Point Value
 - [ ] CMPSS — Compare Scalar Single-Precision Floating-Point Value
-- [ ] CMPXCHG — Compare and Exchange
+- [x] CMPXCHG — Compare and Exchange
 - [ ] CMPXCHG8B/CMPXCHG16B — Compare and Exchange Bytes
 - [ ] COMISD — Compare Scalar Ordered Double-Precision Floating-Point Values and Set EFLAGS
 - [ ] COMISS — Compare Scalar Ordered Single-Precision Floating-Point Values and Set EFLAGS
