@@ -104,7 +104,7 @@ def validate_operand(error_prefix: str, field: str):
 def validate_operand_encoding(error_prefix: str, field: str):
     valid_operand_encodings = [
         "RM", "MR", "FD", "TD", "OI", "MI",
-        "O", "M",
+        "O", "M", "I",
         "ZO"
     ]
     if field not in valid_operand_encodings:

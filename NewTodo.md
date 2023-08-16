@@ -4,7 +4,7 @@
 - [ ] AAD — ASCII Adjust AX Before Division
 - [ ] AAM — ASCII Adjust AX After Multiply
 - [ ] AAS — ASCII Adjust AL After Subtraction
-- [ ] ADC — Add with Carry
+- [x] ADC — Add with Carry
 - [ ] ADCX — Unsigned Integer Addition of Two Operands with Carry Flag
 - [ ] ADD — Add
 - [ ] ADDPD — Add Packed Double-Precision Floating-Point Values
