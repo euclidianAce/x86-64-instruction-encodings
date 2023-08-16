@@ -86,7 +86,14 @@ def validate_operand(error_prefix: str, field: str):
         "imm8",
         "imm16",
         "imm32",
-        "imm64"
+        "imm64",
+        "ptr16:16",
+        "ptr16:32",
+        "m16:16",
+        "m16:32",
+        "m16:64",
+        "rel16",
+        "rel32",
     ]
 
     valid_attributes = [ "Signed", "Unsigned" ]
@@ -104,7 +111,7 @@ def validate_operand(error_prefix: str, field: str):
 def validate_operand_encoding(error_prefix: str, field: str):
     valid_operand_encodings = [
         "RM", "MR", "FD", "TD", "OI", "MI",
-        "O", "M", "I",
+        "O", "M", "I", "D",
         "ZO"
     ]
     if field not in valid_operand_encodings:

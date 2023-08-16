@@ -50,7 +50,7 @@
 - [ ] BTR — Bit Test and Reset
 - [ ] BTS — Bit Test and Set
 - [ ] BZHI — Zero High Bits Starting with Specified Bit Position
-- [ ] CALL — Call Procedure
+- [x] CALL — Call Procedure
 - [ ] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] CLAC — Clear AC Flag in EFLAGS Register
 - [ ] CLC — Clear Carry Flag
