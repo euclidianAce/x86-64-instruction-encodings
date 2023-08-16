@@ -6,7 +6,7 @@
 - [ ] AAS — ASCII Adjust AL After Subtraction
 - [x] ADC — Add with Carry
 - [ ] ADCX — Unsigned Integer Addition of Two Operands with Carry Flag
-- [ ] ADD — Add
+- [x] ADD — Add
 - [ ] ADDPD — Add Packed Double-Precision Floating-Point Values
 - [ ] ADDPS — Add Packed Single-Precision Floating-Point Values
 - [ ] ADDSD — Add Scalar Double-Precision Floating-Point Values
