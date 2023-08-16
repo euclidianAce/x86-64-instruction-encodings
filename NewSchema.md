@@ -29,6 +29,7 @@ Indicates how the operands of the instruction are encoded. Corresponds to the ta
  - `MI`: the ModRM byte is needed to encode this instruction and the `M` field is the first operand. The `R` field is given by the `Opcode` extension field. Immediate data follows.
  - `M`: the ModRM byte is needed to encode this instruction and the `M` field is the operand. The `R` field is given by the `Opcode` extension field.
  - `O`: The register id of the operand is added to the Opcode
+ - `ZO`: No operands
 
 # `Extra`
 

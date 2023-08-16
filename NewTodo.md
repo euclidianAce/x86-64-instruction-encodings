@@ -4,9 +4,9 @@
 - [ ] AAD — ASCII Adjust AX Before Division
 - [ ] AAM — ASCII Adjust AX After Multiply
 - [ ] AAS — ASCII Adjust AL After Subtraction
-- [x] ADC — Add with Carry
+- [ ] ADC — Add with Carry
 - [ ] ADCX — Unsigned Integer Addition of Two Operands with Carry Flag
-- [x] ADD — Add
+- [ ] ADD — Add
 - [ ] ADDPD — Add Packed Double-Precision Floating-Point Values
 - [ ] ADDPS — Add Packed Single-Precision Floating-Point Values
 - [ ] ADDSD — Add Scalar Double-Precision Floating-Point Values
@@ -20,7 +20,7 @@
 - [ ] AESENCLAST — Perform Last Round of an AES Encryption Flow
 - [ ] AESIMC — Perform the AES InvMixColumn Transformation
 - [ ] AESKEYGENASSIST — AES Round Key Generation Assist
-- [x] AND — Logical AND
+- [ ] AND — Logical AND
 - [ ] ANDN — Logical AND NOT
 - [ ] ANDPD — Bitwise Logical AND of Packed Double Precision Floating-Point Values
 - [ ] ANDPS — Bitwise Logical AND of Packed Single Precision Floating-Point Values
@@ -50,25 +50,25 @@
 - [ ] BTR — Bit Test and Reset
 - [ ] BTS — Bit Test and Set
 - [ ] BZHI — Zero High Bits Starting with Specified Bit Position
-- [x] CALL — Call Procedure
-- [x] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
+- [ ] CALL — Call Procedure
+- [ ] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] CLAC — Clear AC Flag in EFLAGS Register
-- [x] CLC — Clear Carry Flag
-- [x] CLD — Clear Direction Flag
+- [ ] CLC — Clear Carry Flag
+- [ ] CLD — Clear Direction Flag
 - [ ] CLFLUSH — Flush Cache Line
 - [ ] CLFLUSHOPT — Flush Cache Line Optimized
-- [x] CLI — Clear Interrupt Flag
+- [ ] CLI — Clear Interrupt Flag
 - [ ] CLTS — Clear Task-Switched Flag in CR0
 - [ ] CLWB — Cache Line Write Back
-- [x] CMC — Complement Carry Flag
+- [ ] CMC — Complement Carry Flag
 - [ ] CMOVcc — Conditional Move
-- [x] CMP — Compare Two Operands
+- [ ] CMP — Compare Two Operands
 - [ ] CMPPD — Compare Packed Double-Precision Floating-Point Values
 - [ ] CMPPS — Compare Packed Single-Precision Floating-Point Values
 - [ ] CMPS/CMPSB/CMPSW/CMPSD/CMPSQ — Compare String Operands
 - [ ] CMPSD — Compare Scalar Double-Precision Floating-Point Value
 - [ ] CMPSS — Compare Scalar Single-Precision Floating-Point Value
-- [x] CMPXCHG — Compare and Exchange
+- [ ] CMPXCHG — Compare and Exchange
 - [ ] CMPXCHG8B/CMPXCHG16B — Compare and Exchange Bytes
 - [ ] COMISD — Compare Scalar Ordered Double-Precision Floating-Point Values and Set EFLAGS
 - [ ] COMISS — Compare Scalar Ordered Single-Precision Floating-Point Values and Set EFLAGS
@@ -96,11 +96,11 @@
 - [ ] CVTTPS2PI — Convert with Truncation Packed Single-Precision FP Values to Packed Dword Integers
 - [ ] CVTTSD2SI — Convert with Truncation Scalar Double-Precision Floating-Point Value to Signed Integer
 - [ ] CVTTSS2SI — Convert with Truncation Scalar Single-Precision Floating-Point Value to Integer
-- [x] CWD/CDQ/CQO — Convert Word to Doubleword/Convert Doubleword to Quadword
+- [ ] CWD/CDQ/CQO — Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] DAA — Decimal Adjust AL after Addition
 - [ ] DAS — Decimal Adjust AL after Subtraction
-- [x] DEC — Decrement by 1
-- [x] DIV — Unsigned Divide
+- [ ] DEC — Decrement by 1
+- [ ] DIV — Unsigned Divide
 - [ ] DIVPD — Divide Packed Double-Precision Floating-Point Values
 - [ ] DIVPS — Divide Packed Single-Precision Floating-Point Values
 - [ ] DIVSD — Divide Scalar Double-Precision Floating-Point Value
@@ -165,11 +165,11 @@
 - [ ] FYL2XP1 — Compute y * log2(x +1)
 - [ ] HADDPD — Packed Double-FP Horizontal Add
 - [ ] HADDPS — Packed Single-FP Horizontal Add
-- [x] HLT — Halt
+- [ ] HLT — Halt
 - [ ] HSUBPD — Packed Double-FP Horizontal Subtract
 - [ ] HSUBPS — Packed Single-FP Horizontal Subtract
-- [x] IDIV — Signed Divide
-- [x] IMUL — Signed Multiply
+- [ ] IDIV — Signed Divide
+- [ ] IMUL — Signed Multiply
 - [ ] IN — Input from Port
 - [x] INC — Increment by 1
 - [ ] INS/INSB/INSW/INSD — Input from Port to String
@@ -179,8 +179,8 @@
 - [ ] INVLPG — Invalidate TLB Entries
 - [ ] INVPCID — Invalidate Process-Context Identifier
 - [ ] IRET/IRETD — Interrupt Return
-- [x] Jcc — Jump if Condition Is Met
-- [x] JMP — Jump
+- [ ] Jcc — Jump if Condition Is Met
+- [ ] JMP — Jump
 - [ ] KADDW/KADDB/KADDQ/KADDD — ADD Two Masks
 - [ ] KANDW/KANDB/KANDQ/KANDD — Bitwise Logical AND Masks
 - [ ] KANDNW/KANDNB/KANDNQ/KANDND — Bitwise Logical AND NOT Masks
@@ -199,7 +199,7 @@
 - [ ] LDDQU — Load Unaligned Integer 128 Bits
 - [ ] LDMXCSR — Load MXCSR Register
 - [ ] LDS/LES/LFS/LGS/LSS — Load Far Pointer
-- [x] LEA — Load Effective Address
+- [ ] LEA — Load Effective Address
 - [x] LEAVE — High Level Procedure Exit
 - [ ] LFENCE — Load Fence
 - [ ] LGDT/LIDT — Load Global/Interrupt Descriptor Table Register
@@ -255,22 +255,22 @@
 - [ ] MOVSHDUP — Replicate Single FP Values
 - [ ] MOVSLDUP — Replicate Single FP Values
 - [ ] MOVSS — Move or Merge Scalar Single-Precision Floating-Point Value
-- [x] MOVSX/MOVSXD — Move with Sign-Extension
+- [ ] MOVSX/MOVSXD — Move with Sign-Extension
 - [ ] MOVUPD — Move Unaligned Packed Double-Precision Floating-Point Values
 - [ ] MOVUPS — Move Unaligned Packed Single-Precision Floating-Point Values
-- [x] MOVZX — Move with Zero-Extend
+- [ ] MOVZX — Move with Zero-Extend
 - [ ] MPSADBW — Compute Multiple Packed Sums of Absolute Difference
-- [x] MUL — Unsigned Multiply
+- [ ] MUL — Unsigned Multiply
 - [ ] MULPD — Multiply Packed Double-Precision Floating-Point Values
 - [ ] MULPS — Multiply Packed Single-Precision Floating-Point Values
 - [ ] MULSD — Multiply Scalar Double-Precision Floating-Point Value
 - [ ] MULSS — Multiply Scalar Single-Precision Floating-Point Values
 - [ ] MULX — Unsigned Multiply Without Affecting Flags
 - [ ] MWAIT — Monitor Wait
-- [x] NEG — Two's Complement Negation
-- [x] NOP — No Operation
-- [x] NOT — One's Complement Negation
-- [x] OR — Logical Inclusive OR
+- [ ] NEG — Two's Complement Negation
+- [ ] NOP — No Operation
+- [ ] NOT — One's Complement Negation
+- [ ] OR — Logical Inclusive OR
 - [ ] ORPD — Bitwise Logical OR of Packed Double Precision Floating-Point Values
 - [ ] ORPS — Bitwise Logical OR of Packed Single Precision Floating-Point Values
 - [ ] OUT — Output to Port
@@ -285,7 +285,7 @@
 - [ ] PALIGNR — Packed Align Right
 - [ ] PAND — Logical AND
 - [ ] PANDN — Logical AND NOT
-- [x] PAUSE — Spin Loop Hint
+- [ ] PAUSE — Spin Loop Hint
 - [ ] PAVGB/PAVGW — Average Packed Integers
 - [ ] PBLENDVB — Variable Blend Packed Bytes
 - [ ] PBLENDW — Blend Packed Words
@@ -328,7 +328,7 @@
 - [ ] PMULLD/PMULLQ — Multiply Packed Integers and Store Low Result
 - [ ] PMULLW — Multiply Packed Signed Integers and Store Low Result
 - [ ] PMULUDQ — Multiply Packed Unsigned Doubleword Integers
-- [x] POP — Pop a Value from the Stack
+- [ ] POP — Pop a Value from the Stack
 - [ ] POPA/POPAD — Pop All General-Purpose Registers
 - [x] POPCNT — Return the Count of Number of Bits Set to 1
 - [ ] POPF/POPFD/POPFQ — Pop Stack into EFLAGS Register
@@ -356,7 +356,7 @@
 - [ ] PTWRITE - Write Data to a Processor Trace Packet
 - [ ] PUNPCKHBW/PUNPCKHWD/PUNPCKHDQ/PUNPCKHQDQ —  Unpack High Data
 - [ ] PUNPCKLBW/PUNPCKLWD/PUNPCKLDQ/PUNPCKLQDQ — Unpack Low Data
-- [x] PUSH — Push Word, Doubleword or Quadword Onto the Stack
+- [ ] PUSH — Push Word, Doubleword or Quadword Onto the Stack
 - [ ] PUSHA/PUSHAD — Push All General-Purpose Registers
 - [ ] PUSHF/PUSHFD — Push EFLAGS Register onto the Stack
 - [ ] PXOR — Logical Exclusive OR
@@ -373,7 +373,7 @@
 - [ ] RDTSC — Read Time-Stamp Counter
 - [ ] RDTSCP — Read Time-Stamp Counter and Processor ID
 - [ ] REP/REPE/REPZ/REPNE/REPNZ — Repeat String Operation Prefix
-- [x] RET — Return from Procedure
+- [ ] RET — Return from Procedure
 - [ ] RORX — Rotate Right Logical Without Affecting Flags
 - [ ] ROUNDPD — Round Packed Double Precision Floating-Point Values
 - [ ] ROUNDPS — Round Packed Single Precision Floating-Point Values
@@ -383,11 +383,11 @@
 - [ ] RSQRTPS — Compute Reciprocals of Square Roots of Packed Single-Precision Floating-Point Values
 - [ ] RSQRTSS — Compute Reciprocal of Square Root of Scalar Single-Precision Floating-Point Value
 - [ ] SAHF — Store AH into Flags
-- [x] SAL/SAR/SHL/SHR — Shift
+- [ ] SAL/SAR/SHL/SHR — Shift
 - [ ] SARX/SHLX/SHRX — Shift Without Affecting Flags
-- [x] SBB — Integer Subtraction with Borrow
+- [ ] SBB — Integer Subtraction with Borrow
 - [ ] SCAS/SCASB/SCASW/SCASD — Scan String
-- [x] SETcc — Set Byte on Condition
+- [ ] SETcc — Set Byte on Condition
 - [ ] SFENCE — Store Fence
 - [ ] SGDT — Store Global Descriptor Table Register
 - [ ] SHA1RNDS4 — Perform Four Rounds of SHA1 Operation
@@ -409,13 +409,13 @@
 - [ ] SQRTSD — Compute Square Root of Scalar Double-Precision Floating-Point Value
 - [ ] SQRTSS — Compute Square Root of Scalar Single-Precision Value
 - [ ] STAC — Set AC Flag in EFLAGS Register
-- [x] STC — Set Carry Flag
-- [x] STD — Set Direction Flag
-- [x] STI — Set Interrupt Flag
+- [ ] STC — Set Carry Flag
+- [ ] STD — Set Direction Flag
+- [ ] STI — Set Interrupt Flag
 - [ ] STMXCSR — Store MXCSR Register State
 - [ ] STOS/STOSB/STOSW/STOSD/STOSQ — Store String
 - [ ] STR — Store Task Register
-- [x] SUB — Subtract
+- [ ] SUB — Subtract
 - [ ] SUBPD — Subtract Packed Double-Precision Floating-Point Values
 - [ ] SUBPS — Subtract Packed Single-Precision Floating-Point Values
 - [ ] SUBSD — Subtract Scalar Double-Precision Floating-Point Value
@@ -425,11 +425,11 @@
 - [ ] SYSENTER — Fast System Call
 - [ ] SYSEXIT — Fast Return from Fast System Call
 - [ ] SYSRET — Return From Fast System Call
-- [x] TEST — Logical Compare
+- [ ] TEST — Logical Compare
 - [ ] TZCNT — Count the Number of Trailing Zero Bits
 - [ ] UCOMISD — Unordered Compare Scalar Double-Precision Floating-Point Values and Set EFLAGS
 - [ ] UCOMISS — Unordered Compare Scalar Single-Precision Floating-Point Values and Set EFLAGS
-- [x] UD2 — Undefined Instruction
+- [ ] UD2 — Undefined Instruction
 - [ ] UNPCKHPD — Unpack and Interleave High Packed Double-Precision Floating-Point Values
 - [ ] UNPCKHPS — Unpack and Interleave High Packed Single-Precision Floating-Point Values
 - [ ] UNPCKLPD — Unpack and Interleave Low Packed Double-Precision Floating-Point Values
@@ -613,11 +613,11 @@
 - [ ] XABORT — Transactional Abort
 - [ ] XADD — Exchange and Add
 - [ ] XBEGIN — Transactional Begin
-- [x] XCHG — Exchange Register/Memory with Register
+- [ ] XCHG — Exchange Register/Memory with Register
 - [ ] XEND — Transactional End
 - [ ] XGETBV — Get Value of Extended Control Register
 - [ ] XLAT/XLATB — Table Look-up Translation
-- [x] XOR — Logical Exclusive OR
+- [ ] XOR — Logical Exclusive OR
 - [ ] XORPD — Bitwise Logical XOR of Packed Double Precision Floating-Point Values
 - [ ] XORPS — Bitwise Logical XOR of Packed Single Precision Floating-Point Values
 - [ ] XRSTOR — Restore Processor Extended States
