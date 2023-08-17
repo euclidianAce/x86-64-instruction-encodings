@@ -1,0 +1,6 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+E9	rel16				D			NS,V
+E9	rel32,Signed				D			V,V
+FF/4	rm16,Unsigned				M			NS,V
+FF/4	rm32				M			NS,V
+FF/4	rm64				M			V,NE
