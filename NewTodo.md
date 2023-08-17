@@ -255,7 +255,7 @@
 - [ ] MOVSHDUP — Replicate Single FP Values
 - [ ] MOVSLDUP — Replicate Single FP Values
 - [ ] MOVSS — Move or Merge Scalar Single-Precision Floating-Point Value
-- [ ] MOVSX/MOVSXD — Move with Sign-Extension
+- [x] MOVSX/MOVSXD — Move with Sign-Extension
 - [ ] MOVUPD — Move Unaligned Packed Double-Precision Floating-Point Values
 - [ ] MOVUPS — Move Unaligned Packed Single-Precision Floating-Point Values
 - [ ] MOVZX — Move with Zero-Extend
