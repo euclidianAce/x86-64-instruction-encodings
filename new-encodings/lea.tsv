@@ -1,0 +1,4 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+8D	r16	m			RM	OperandSizeOverride		V,V
+8D	r32	m			RM			V,V
+8D	r64	m			RM	REX.W		V,NE

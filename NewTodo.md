@@ -199,7 +199,7 @@
 - [ ] LDDQU — Load Unaligned Integer 128 Bits
 - [ ] LDMXCSR — Load MXCSR Register
 - [ ] LDS/LES/LFS/LGS/LSS — Load Far Pointer
-- [ ] LEA — Load Effective Address
+- [x] LEA — Load Effective Address
 - [x] LEAVE — High Level Procedure Exit
 - [ ] LFENCE — Load Fence
 - [ ] LGDT/LIDT — Load Global/Interrupt Descriptor Table Register
