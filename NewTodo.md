@@ -165,7 +165,7 @@
 - [ ] FYL2XP1 — Compute y * log2(x +1)
 - [ ] HADDPD — Packed Double-FP Horizontal Add
 - [ ] HADDPS — Packed Single-FP Horizontal Add
-- [ ] HLT — Halt
+- [x] HLT — Halt
 - [ ] HSUBPD — Packed Double-FP Horizontal Subtract
 - [ ] HSUBPS — Packed Single-FP Horizontal Subtract
 - [ ] IDIV — Signed Divide
