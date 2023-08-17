@@ -100,7 +100,7 @@
 - [ ] DAA — Decimal Adjust AL after Addition
 - [ ] DAS — Decimal Adjust AL after Subtraction
 - [x] DEC — Decrement by 1
-- [ ] DIV — Unsigned Divide
+- [x] DIV — Unsigned Divide
 - [ ] DIVPD — Divide Packed Double-Precision Floating-Point Values
 - [ ] DIVPS — Divide Packed Single-Precision Floating-Point Values
 - [ ] DIVSD — Divide Scalar Double-Precision Floating-Point Value
