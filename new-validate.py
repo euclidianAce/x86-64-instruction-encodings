@@ -66,6 +66,7 @@ def validate_operand(error_prefix: str, field: str):
         return
 
     valid_operands = [
+        "m",
         "rm8",
         "rm16",
         "rm32",
@@ -92,6 +93,7 @@ def validate_operand(error_prefix: str, field: str):
         "m16:16",
         "m16:32",
         "m16:64",
+        "rel8",
         "rel16",
         "rel32",
     ]
@@ -110,8 +112,9 @@ def validate_operand(error_prefix: str, field: str):
 
 def validate_operand_encoding(error_prefix: str, field: str):
     valid_operand_encodings = [
+        "RMI",
         "RM", "MR", "FD", "TD", "OI", "MI",
-        "O", "M", "I", "D",
+        "O", "M", "I", "D", "S",
         "ZO"
     ]
     if field not in valid_operand_encodings:
