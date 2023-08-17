@@ -53,14 +53,14 @@
 - [x] CALL — Call Procedure
 - [x] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] CLAC — Clear AC Flag in EFLAGS Register
-- [ ] CLC — Clear Carry Flag
-- [ ] CLD — Clear Direction Flag
+- [x] CLC — Clear Carry Flag
+- [x] CLD — Clear Direction Flag
 - [ ] CLFLUSH — Flush Cache Line
 - [ ] CLFLUSHOPT — Flush Cache Line Optimized
-- [ ] CLI — Clear Interrupt Flag
+- [x] CLI — Clear Interrupt Flag
 - [ ] CLTS — Clear Task-Switched Flag in CR0
 - [ ] CLWB — Cache Line Write Back
-- [ ] CMC — Complement Carry Flag
+- [x] CMC — Complement Carry Flag
 - [ ] CMOVcc — Conditional Move
 - [ ] CMP — Compare Two Operands
 - [ ] CMPPD — Compare Packed Double-Precision Floating-Point Values
