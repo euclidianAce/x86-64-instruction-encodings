@@ -99,7 +99,7 @@
 - [x] CWD/CDQ/CQO — Convert Word to Doubleword/Convert Doubleword to Quadword
 - [ ] DAA — Decimal Adjust AL after Addition
 - [ ] DAS — Decimal Adjust AL after Subtraction
-- [ ] DEC — Decrement by 1
+- [x] DEC — Decrement by 1
 - [ ] DIV — Unsigned Divide
 - [ ] DIVPD — Divide Packed Double-Precision Floating-Point Values
 - [ ] DIVPS — Divide Packed Single-Precision Floating-Point Values
