@@ -169,7 +169,7 @@
 - [ ] HSUBPD — Packed Double-FP Horizontal Subtract
 - [ ] HSUBPS — Packed Single-FP Horizontal Subtract
 - [x] IDIV — Signed Divide
-- [ ] IMUL — Signed Multiply
+- [x] IMUL — Signed Multiply
 - [ ] IN — Input from Port
 - [x] INC — Increment by 1
 - [ ] INS/INSB/INSW/INSD — Input from Port to String
