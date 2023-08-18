@@ -373,7 +373,7 @@
 - [ ] RDTSC — Read Time-Stamp Counter
 - [ ] RDTSCP — Read Time-Stamp Counter and Processor ID
 - [ ] REP/REPE/REPZ/REPNE/REPNZ — Repeat String Operation Prefix
-- [ ] RET — Return from Procedure
+- [x] RET — Return from Procedure
 - [ ] RORX — Rotate Right Logical Without Affecting Flags
 - [ ] ROUNDPD — Round Packed Double Precision Floating-Point Values
 - [ ] ROUNDPS — Round Packed Single Precision Floating-Point Values
