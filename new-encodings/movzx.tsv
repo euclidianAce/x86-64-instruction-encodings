@@ -1,0 +1,6 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+0F,B6	r16	rm8,Unsigned			RM	OperandSizeOverride		V,V
+0F,B6	r32	rm8,Unsigned			RM			V,V
+0F,B6	r64	rm8,Unsigned			RM	REX.W		V,NE
+0F,B7	r32	rm16,Unsigned			RM			V,V
+0F,B7	r64	rm16,Unsigned			RM	REX.W		V,NE

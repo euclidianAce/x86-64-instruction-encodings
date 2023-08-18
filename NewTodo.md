@@ -258,7 +258,7 @@
 - [x] MOVSX/MOVSXD — Move with Sign-Extension
 - [ ] MOVUPD — Move Unaligned Packed Double-Precision Floating-Point Values
 - [ ] MOVUPS — Move Unaligned Packed Single-Precision Floating-Point Values
-- [ ] MOVZX — Move with Zero-Extend
+- [x] MOVZX — Move with Zero-Extend
 - [ ] MPSADBW — Compute Multiple Packed Sums of Absolute Difference
 - [ ] MUL — Unsigned Multiply
 - [ ] MULPD — Multiply Packed Double-Precision Floating-Point Values
