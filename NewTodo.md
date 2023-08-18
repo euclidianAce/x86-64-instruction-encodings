@@ -356,7 +356,7 @@
 - [ ] PTWRITE - Write Data to a Processor Trace Packet
 - [ ] PUNPCKHBW/PUNPCKHWD/PUNPCKHDQ/PUNPCKHQDQ —  Unpack High Data
 - [ ] PUNPCKLBW/PUNPCKLWD/PUNPCKLDQ/PUNPCKLQDQ — Unpack Low Data
-- [ ] PUSH — Push Word, Doubleword or Quadword Onto the Stack
+- [x] PUSH — Push Word, Doubleword or Quadword Onto the Stack
 - [ ] PUSHA/PUSHAD — Push All General-Purpose Registers
 - [ ] PUSHF/PUSHFD — Push EFLAGS Register onto the Stack
 - [ ] PXOR — Logical Exclusive OR
