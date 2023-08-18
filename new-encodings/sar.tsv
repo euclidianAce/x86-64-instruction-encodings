@@ -1,0 +1,13 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+D0/7	rm8,Signed	1			M1			V,V
+D1/7	rm16,Signed	1			M1	OperandSizeOverride		V,V
+D1/7	rm32,Signed	1			M1			V,V
+D1/7	rm64,Signed	1			M1	REX.W		V,NE
+D2/7	rm8,Signed	cl,Unsigned			MC			V,V
+D3/7	rm16,Signed	cl,Unsigned			MC	OperandSizeOverride		V,V
+D3/7	rm32,Signed	cl,Unsigned			MC			V,V
+D3/7	rm64,Signed	cl,Unsigned			MC	REX.W		V,NE
+C0/7	rm8,Signed	imm8,Unsigned			MI			V,V
+C1/7	rm16,Signed	imm8,Unsigned			MI	OperandSizeOverride		V,V
+C1/7	rm32,Signed	imm8,Unsigned			MI			V,V
+C1/7	rm64,Signed	imm8,Unsigned			MI	REX.W		V,NE

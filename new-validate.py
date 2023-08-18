@@ -76,6 +76,10 @@ def validate_operand(error_prefix: str, field: str):
         "r32",
         "r64",
         "Sreg",
+        "cl",
+        "cx",
+        "ecx",
+        "rcx",
         "al",
         "ax",
         "eax",
@@ -102,6 +106,7 @@ def validate_operand(error_prefix: str, field: str):
         "rel8",
         "rel16",
         "rel32",
+        "1",
     ]
 
     valid_attributes = [ "Signed", "Unsigned" ]
@@ -119,7 +124,7 @@ def validate_operand(error_prefix: str, field: str):
 def validate_operand_encoding(error_prefix: str, field: str):
     valid_operand_encodings = [
         "RMI",
-        "RM", "MR", "FD", "TD", "OI", "MI",
+        "RM", "MR", "FD", "TD", "OI", "MI", "MC", "M1",
         "O", "M", "I", "D", "S",
         "ZO"
     ]
