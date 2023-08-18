@@ -328,7 +328,7 @@
 - [ ] PMULLD/PMULLQ — Multiply Packed Integers and Store Low Result
 - [ ] PMULLW — Multiply Packed Signed Integers and Store Low Result
 - [ ] PMULUDQ — Multiply Packed Unsigned Doubleword Integers
-- [ ] POP — Pop a Value from the Stack
+- [x] POP — Pop a Value from the Stack
 - [ ] POPA/POPAD — Pop All General-Purpose Registers
 - [x] POPCNT — Return the Count of Number of Bits Set to 1
 - [ ] POPF/POPFD/POPFQ — Pop Stack into EFLAGS Register
