@@ -285,7 +285,7 @@
 - [ ] PALIGNR — Packed Align Right
 - [ ] PAND — Logical AND
 - [ ] PANDN — Logical AND NOT
-- [ ] PAUSE — Spin Loop Hint
+- [x] PAUSE — Spin Loop Hint
 - [ ] PAVGB/PAVGW — Average Packed Integers
 - [ ] PBLENDVB — Variable Blend Packed Bytes
 - [ ] PBLENDW — Blend Packed Words
