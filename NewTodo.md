@@ -270,7 +270,7 @@
 - [x] NEG — Two's Complement Negation
 - [x] NOP — No Operation
 - [x] NOT — One's Complement Negation
-- [ ] OR — Logical Inclusive OR
+- [x] OR — Logical Inclusive OR
 - [ ] ORPD — Bitwise Logical OR of Packed Double Precision Floating-Point Values
 - [ ] ORPS — Bitwise Logical OR of Packed Single Precision Floating-Point Values
 - [ ] OUT — Output to Port
