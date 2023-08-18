@@ -260,7 +260,7 @@
 - [ ] MOVUPS — Move Unaligned Packed Single-Precision Floating-Point Values
 - [x] MOVZX — Move with Zero-Extend
 - [ ] MPSADBW — Compute Multiple Packed Sums of Absolute Difference
-- [ ] MUL — Unsigned Multiply
+- [x] MUL — Unsigned Multiply
 - [ ] MULPD — Multiply Packed Double-Precision Floating-Point Values
 - [ ] MULPS — Multiply Packed Single-Precision Floating-Point Values
 - [ ] MULSD — Multiply Scalar Double-Precision Floating-Point Value
