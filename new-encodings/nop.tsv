@@ -1,0 +1,4 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+90					ZO			V,V
+0F,1F/0	rm16				M	OperandSizeOverride		V,V
+0F,1F/0	rm32				M			V,V
