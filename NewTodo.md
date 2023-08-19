@@ -409,9 +409,9 @@
 - [ ] SQRTSD — Compute Square Root of Scalar Double-Precision Floating-Point Value
 - [ ] SQRTSS — Compute Square Root of Scalar Single-Precision Value
 - [ ] STAC — Set AC Flag in EFLAGS Register
-- [ ] STC — Set Carry Flag
-- [ ] STD — Set Direction Flag
-- [ ] STI — Set Interrupt Flag
+- [x] STC — Set Carry Flag
+- [x] STD — Set Direction Flag
+- [x] STI — Set Interrupt Flag
 - [ ] STMXCSR — Store MXCSR Register State
 - [ ] STOS/STOSB/STOSW/STOSD/STOSQ — Store String
 - [ ] STR — Store Task Register
