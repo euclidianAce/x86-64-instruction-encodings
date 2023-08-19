@@ -429,7 +429,7 @@
 - [ ] TZCNT — Count the Number of Trailing Zero Bits
 - [ ] UCOMISD — Unordered Compare Scalar Double-Precision Floating-Point Values and Set EFLAGS
 - [ ] UCOMISS — Unordered Compare Scalar Single-Precision Floating-Point Values and Set EFLAGS
-- [ ] UD2 — Undefined Instruction
+- [x] UD2 — Undefined Instruction
 - [ ] UNPCKHPD — Unpack and Interleave High Packed Double-Precision Floating-Point Values
 - [ ] UNPCKHPS — Unpack and Interleave High Packed Single-Precision Floating-Point Values
 - [ ] UNPCKLPD — Unpack and Interleave Low Packed Double-Precision Floating-Point Values
