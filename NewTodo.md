@@ -415,7 +415,7 @@
 - [ ] STMXCSR — Store MXCSR Register State
 - [ ] STOS/STOSB/STOSW/STOSD/STOSQ — Store String
 - [ ] STR — Store Task Register
-- [ ] SUB — Subtract
+- [x] SUB — Subtract
 - [ ] SUBPD — Subtract Packed Double-Precision Floating-Point Values
 - [ ] SUBPS — Subtract Packed Single-Precision Floating-Point Values
 - [ ] SUBSD — Subtract Scalar Double-Precision Floating-Point Value
