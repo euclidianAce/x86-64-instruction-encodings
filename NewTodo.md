@@ -617,7 +617,7 @@
 - [ ] XEND — Transactional End
 - [ ] XGETBV — Get Value of Extended Control Register
 - [ ] XLAT/XLATB — Table Look-up Translation
-- [ ] XOR — Logical Exclusive OR
+- [x] XOR — Logical Exclusive OR
 - [ ] XORPD — Bitwise Logical XOR of Packed Double Precision Floating-Point Values
 - [ ] XORPS — Bitwise Logical XOR of Packed Single Precision Floating-Point Values
 - [ ] XRSTOR — Restore Processor Extended States
