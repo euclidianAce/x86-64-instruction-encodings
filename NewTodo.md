@@ -387,7 +387,7 @@
 - [ ] SARX/SHLX/SHRX — Shift Without Affecting Flags
 - [x] SBB — Integer Subtraction with Borrow
 - [ ] SCAS/SCASB/SCASW/SCASD — Scan String
-- [ ] SETcc — Set Byte on Condition
+- [x] SETcc — Set Byte on Condition
 - [ ] SFENCE — Store Fence
 - [ ] SGDT — Store Global Descriptor Table Register
 - [ ] SHA1RNDS4 — Perform Four Rounds of SHA1 Operation
