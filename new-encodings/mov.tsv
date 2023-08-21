@@ -2,11 +2,11 @@ Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Su
 88	rm8	r8			MR			V,V
 89	rm16	r16			MR	OperandSizeOverride		V,V
 89	rm32	r32			MR			V,V
-89	rm64	r64			MR	REX		V,NE
+89	rm64	r64			MR	REX.W		V,NE
 8A	r8	rm8			RM			V,V
 8B	r16	rm16			RM	OperandSizeOverride		V,V
 8B	r32	rm32			RM			V,V
-8B	r64	rm64			RM	REX		V,NE
+8B	r64	rm64			RM	REX.W		V,NE
 8C	rm16	Sreg			MR	OperandSizeOverride		V,V
 8C	r32	Sreg			MR			V,V
 8C	r64	Sreg			MR	REX.W		V,V
