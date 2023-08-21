@@ -179,7 +179,7 @@
 - [ ] INVLPG — Invalidate TLB Entries
 - [ ] INVPCID — Invalidate Process-Context Identifier
 - [ ] IRET/IRETD — Interrupt Return
-- [ ] Jcc — Jump if Condition Is Met
+- [x] Jcc — Jump if Condition Is Met
 - [x] JMP — Jump
 - [ ] KADDW/KADDB/KADDQ/KADDD — ADD Two Masks
 - [ ] KANDW/KANDB/KANDQ/KANDD — Bitwise Logical AND Masks

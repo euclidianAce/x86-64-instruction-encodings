@@ -17,6 +17,9 @@ The operands of the instruction, maybe followed by a comma and a `Signed` or `Un
  - `moffs8`, `moffs16`, `moffs32`, `moffs64`: A memory offset of the given bit width (TODO: Elaborate on this)
  - `imm8`, `imm16`, `imm32`, `imm64`: An immediate of the given bit width
 
+
+The `Signed` or `Unsigned` attribute documents things such as implicit sign/zero extension e.g. in `C7 mov rm64, imm32`
+
 # `OperandEncoding`
 
 Indicates how the operands of the instruction are encoded. Corresponds to the table after the opcodes in the intel manual.
@@ -33,10 +36,10 @@ Indicates how the operands of the instruction are encoded. Corresponds to the ta
 
 # `Extra`
 
-Additional data needed to encode the instruction or additional information about what the operation will do (such as implicit sign extension e.g. in `C7 mov rm64, imm32`)
+Additional data needed to encode the instruction or additional information about what the operation will do
 
- - `OperandSizeOverride`: the "operand size override" prefix `66H` is needed to encode this instruction
- - `REX`: the "REX" prefix (`40H`) is needed to encode this instruction
+ - `OperandSizeOverride`: the "operand-size override" prefix `66H` is needed to encode this instruction
+ - `AddressSizeOverride`: the "address-size override" prefix `67H` is needed to encode this instruction
  - `REX.W`: the "W" bit of the REX prefix should be present
 
 # `ForcedPrefix`

@@ -1,0 +1,3 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+0F,84	rel16,Signed				D	OperandSizeOverride		NS,V
+0F,84	rel32,Signed				D			V,V

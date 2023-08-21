@@ -132,7 +132,7 @@ def validate_operand_encoding(error_prefix: str, field: str):
         add_error(error_prefix, f"'{field}' is not a valid operand encoding")
 
 def validate_extra(error_prefix: str, field: str):
-    valid_extras = [ "OperandSizeOverride", "REX", "REX.W" ]
+    valid_extras = [ "OperandSizeOverride", "AddressSizeOverride", "REX.W" ]
 
     if field == "":
         return
