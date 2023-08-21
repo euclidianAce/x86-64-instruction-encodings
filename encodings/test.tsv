@@ -1,7 +1,13 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
-A8	$al	Ib				
-A9	$rax	Iz				
-F6	Eb				/0	
-F7	Ev				/0	
-84	Eb	Gb			/r	
-85	Ev	Gb			/r	
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+A8	al	imm8			I			V,V
+A9	ax	imm16			I	OperandSizeOverride		V,V
+A9	eax	imm32			I			V,V
+A9	rax	imm32			I	REX.W		V,NE
+F6/0	rm8	imm8			MI			V,V
+F7/0	rm16	imm16			MI	OperandSizeOverride		V,V
+F7/0	rm32	imm32			MI			V,V
+F7/0	rm64	imm32,Signed			MI	REX.W		V,NE
+84	rm8	r8			MR			V,V
+85	rm16	r16			MR	OperandSizeOverride		V,V
+85	rm32	r32			MR			V,V
+85	rm64	r64			MR	REX.W		V,NE

@@ -1,15 +1,30 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
-88	Eb	Gb				
-89	Ev	Gv				
-8A	Gb	Eb				
-8B	Gv	Ev				
-8C	Ev	Sw				
-8E	Sw	Ev				
-A0	$al	Ob				
-A1	$rax	Ov				
-A2	Ob	$al				
-A3	Ov	$rax				
-B0	%b	Ib				
-B8	%v	Iv				
-C6	Eb	Ib				
-C7	Ev	Iz				
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+88	rm8	r8			MR			V,V
+89	rm16	r16			MR	OperandSizeOverride		V,V
+89	rm32	r32			MR			V,V
+89	rm64	r64			MR	REX.W		V,NE
+8A	r8	rm8			RM			V,V
+8B	r16	rm16			RM	OperandSizeOverride		V,V
+8B	r32	rm32			RM			V,V
+8B	r64	rm64			RM	REX.W		V,NE
+8C	rm16	Sreg			MR	OperandSizeOverride		V,V
+8C	r32	Sreg			MR			V,V
+8C	r64	Sreg			MR	REX.W		V,V
+8E	Sreg	rm16			RM			V,V
+8E	Sreg	rm64			RM	REX.W		V,V
+A0	al	moffs8			FD			V,V
+A1	ax	moffs16			FD	OperandSizeOverride		V,V
+A1	eax	moffs32			FD			V,V
+A1	rax	moffs64			FD	REX.W		V,NE
+A2	moffs8	al			TD			V,V
+A3	moffs16	ax			TD	OperandSizeOverride		V,V
+A3	moffs32	eax			TD			V,V
+A3	moffs64	rax			TD	REX.W		V,NE
+B0+	r8	imm8			OI			V,V
+B8+	r16	imm16			OI	OperandSizeOverride		V,V
+B8+	r32	imm32			OI			V,V
+B8+	r64	imm64			OI	REX.W		V,NE
+C6/0	rm8	imm8			MI			V,V
+C7/0	rm16	imm16			MI	OperandSizeOverride		V,V
+C7/0	rm32	imm32			MI			V,V
+C7/0	rm64	imm32,Signed			MI	REX.W		V,NE

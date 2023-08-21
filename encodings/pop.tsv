@@ -1,3 +1,16 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
-58	%v					
-8F	Ev				/0	
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+8F/0	rm16				M	OperandSizeOverride		V,V
+8F/0	rm32				M			NE,V
+8F/0	rm64				M			V,NE
+58+	r16				O	OperandSizeOverride		V,V
+58+	r32				O			NE,V
+58+	r64				O			V,NE
+1F	ds				ZO			I,V
+07	es				ZO			I,V
+17	ss				ZO			I,V
+0F,A1	fs				ZO	OperandSizeOverride		V,V
+0F,A1	fs				ZO			NE,V
+0F,A1	fs				ZO			V,NE
+0F,A9	gs				ZO	OperandSizeOverride		V,V
+0F,A9	gs				ZO			NE,V
+0F,A9	gs				ZO			V,NE

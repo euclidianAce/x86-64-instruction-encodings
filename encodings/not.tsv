@@ -1,3 +1,5 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
-F6	Eb				/2	
-F7	Ev				/2	
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+F6/2	rm8				M			V,V
+F7/2	rm16				M	OperandSizeOverride		V,V
+F7/2	rm32				M			V,V
+F7/2	rm64				M	REX.W		V,NE

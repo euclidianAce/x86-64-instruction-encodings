@@ -1,3 +1,5 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
-0F,B0	Eb	Gb				
-0F,B1	Ev	Gv				
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+0F,B0	rm8	r8			MR			V,V
+0F,B1	rm16	r16			MR	OperandSizeOverride		V,V
+0F,B1	rm32	r32			MR			V,V
+0F,B1	rm64	r64			MR	REX.W		V,NE

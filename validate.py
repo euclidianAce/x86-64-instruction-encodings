@@ -1,180 +1,209 @@
 #!/usr/bin/env python3
 
 import csv
+import re
 from sys import argv
+from typing import Optional, Tuple
 
 class tsv(csv.Dialect):
     delimiter = '\t'
-    doublequote = None
+    doublequote = True
     escapechar = None
     lineterminator = '\n'
     quotechar = None
     quoting = csv.QUOTE_NONE
-    skipinitialspace = None
+    skipinitialspace = False
 
-first_row = ['Opcode', 'Operand1', 'Operand2', 'Operand3', 'Operand4', 'Modifier', 'ForcedPrefix']
-
+first_row = ["Opcode", "Operand1", "Operand2", "Operand3", "Operand4", "OperandEncoding", "Extra", "ForcedPrefix", "Support"]
 exit_code = 0
 errors = []
 
-# TODO: check mutual exclusivity for groups
-valid_prefixes = [
-    # group 1
-    0xF0,
-    0xF2,
-    0xF3,
-
-    # group 2
-    0x2E,
-    0x36,
-    0x3E,
-    0x26,
-    0x64,
-    0x65,
-
-    # group 3
-    0x66,
-
-    # group 4
-    0x67,
-]
-
-valid_registers = [
-    'al', 'ax', 'eax', 'rax',
-    'cl', 'cx', 'ecx', 'rcx',
-    'dl', 'dx', 'edx', 'rdx',
-    'bl', 'bx', 'ebx', 'rbx',
-    'ah', 'sp', 'esp', 'rsp',
-    'ch', 'bp', 'ebp', 'rbp',
-    'dh', 'si', 'esi', 'rsi',
-    'bh', 'di', 'edi', 'rdi',
-    'r8l', 'r8w', 'r8d', 'r8',
-    'r9l', 'r9w', 'r9d', 'r9',
-    'r10l', 'r10w', 'r10d', 'r10',
-    'r11l', 'r11w', 'r11d', 'r11',
-    'r12l', 'r12w', 'r12d', 'r12',
-    'r13l', 'r13w', 'r13d', 'r13',
-    'r14l', 'r14w', 'r14d', 'r14',
-    'r15l', 'r15w', 'r15d', 'r15',
-]
-
-valid_addressing_methods = [
-    'A', 'B', 'C', 'D', 'E', 'F',
-    'G', 'H', 'I', 'J', 'L', 'M',
-    'N', 'O', 'P', 'Q', 'R', 'S',
-    'U', 'V', 'W', 'X', 'Y',
-    '%',
-]
-
-valid_operand_types = [
-    'a', 'b', 'c', 'd', 'dq',
-    'p', 'pd', 'pi', 'ps', 'q',
-    'qq', 's', 'sd', 'ss', 'si',
-    'v', 'w', 'x', 'y', 'z',
-]
-
-valid_modifiers = ['0', '1', '2', '3', '4', '5', '6', '7', 'r']
-
-def add_error(file_name, msg):
+def add_error(prefix: str, msg: str):
     global exit_code
     global errors
     exit_code = 1
-    errors += [file_name + ": " + msg]
+    errors += [prefix + ": " + msg]
 
-def validate_operand(file_name, operand):
-    if operand == None:
-        add_error(file_name, "Missing an Operand field")
-        return
-    elif operand == '':
-        return
-
-    if operand[0] == '$':
-        register_name = operand[1:]
-        if register_name not in valid_registers:
-            add_error(file_name, "Invalid register name '%s'" % register_name)
-        return
-    addr_method = operand[0]
-    if addr_method not in valid_addressing_methods:
-        add_error(file_name, "Invalid addressing method '%s'" % addr_method)
-
-    if len(operand) < 2:
-        if addr_method != 'M':
-            add_error(file_name, "Missing operand type")
-        return
-
-    op_type = operand[1:]
-    if op_type not in valid_operand_types:
-        add_error(file_name, "Invalid operand type '%s'" % op_type)
-
-def validate_modifier(file_name, modifier):
-    if modifier == None:
-        add_error(file_name, "Missing field 'Modifier'")
-        return
-    elif modifier == '':
-        return
-
-    if modifier[0] != '/':
-        add_error(file_name, "modifier (%s) should begin with a slash" % modifier)
-        return
-    if len(modifier) != 2:
-        add_error(file_name, "modifier (%s) should only be 2 characters" % modifier)
-        return
-    if modifier[1] not in valid_modifiers:
-        add_error(file_name, "modifier should be one of " + repr(valid_modifiers))
-        return
-
-def validate_forced_prefix(file_name, prefix_str):
-    if prefix_str == None:
-        add_error(file_name, "Missing field 'ForcedPrefix'")
-        return
-    elif prefix_str == '':
-        return
-
+def is_hex_byte(field: str) -> Tuple[bool, str]:
     try:
-        prefix = int(prefix_str, 16)
-        if prefix not in valid_prefixes:
-            add_error(file_name, "Invalid ForcedPrefix: %s is not a valid prefix, should be one of " + repr(valid_prefixes));
-    except ValueError:
-        add_error(file_name, "ForcedPrefix %s is not a valid hex number" % op)
+        value = int(field, 16)
+        if value < 0 or value > 255:
+            return (False, "Value out of range [0,FF]")
+        return (True, "")
+    except:
+        return (False, "Not a valid hex integer")
 
-def validate_file(file_name):
+def validate_opcode(error_prefix: str, field: str):
+    if field == "":
+        add_error(error_prefix, "Missing Opcode")
+        return
+
+    extension = None
+
+    if field[-1] == '+':
+        field = field[0:-1]
+
+    slash_index = field.find('/')
+    if slash_index != -1:
+        extension = field[slash_index + 1:]
+        field = field[0:slash_index]
+
+    for n in field.split(","):
+        ok, reason = is_hex_byte(n)
+        if not ok:
+            add_error(error_prefix, f"Invalid Opcode '{n}': {reason}")
+
+    if extension:
+        try:
+            value = int(extension, 10)
+            if value < 0 or value > 7:
+                add_error(error_prefix, f"Opcode extension must be within [0,7], got {value}")
+        except ValueError:
+            add_error(error_prefix, f"Invalid Opcode extension {extension}")
+
+def validate_operand(error_prefix: str, field: str):
+    if field == "":
+        return
+
+    valid_operands = [
+        "m",
+        "rm8",
+        "rm16",
+        "rm32",
+        "rm64",
+        "r8",
+        "r16",
+        "r32",
+        "r64",
+        "Sreg",
+        "cl",
+        "cx",
+        "ecx",
+        "rcx",
+        "al",
+        "ax",
+        "eax",
+        "rax",
+        "cs",
+        "ss",
+        "ds",
+        "es",
+        "fs",
+        "gs",
+        "moffs8",
+        "moffs16",
+        "moffs32",
+        "moffs64",
+        "imm8",
+        "imm16",
+        "imm32",
+        "imm64",
+        "ptr16:16",
+        "ptr16:32",
+        "m16:16",
+        "m16:32",
+        "m16:64",
+        "rel8",
+        "rel16",
+        "rel32",
+        "1",
+    ]
+
+    valid_attributes = [ "Signed", "Unsigned" ]
+
+    xs = [x for x in field.split(',')]
+    if len(xs) > 2:
+        add_error(error_prefix, "Too many fields in operand")
+
+    if xs[0] not in valid_operands:
+        add_error(error_prefix, f"Invalid operand '{xs[0]}'")
+
+    if len(xs) > 1 and xs[1] not in valid_attributes:
+        add_error(error_prefix, f"Invalid operand attribute '{xs[1]}'")
+
+def validate_operand_encoding(error_prefix: str, field: str):
+    valid_operand_encodings = [
+        "RMI",
+        "RM", "MR", "FD", "TD", "OI", "MI", "MC", "M1",
+        "O", "M", "I", "D", "S",
+        "ZO"
+    ]
+    if field not in valid_operand_encodings:
+        add_error(error_prefix, f"'{field}' is not a valid operand encoding")
+
+def validate_extra(error_prefix: str, field: str):
+    valid_extras = [ "OperandSizeOverride", "AddressSizeOverride", "REX.W" ]
+
+    if field == "":
+        return
+
+    for ex in field.split(','):
+        if ex not in valid_extras:
+            add_error(error_prefix, f"Invalid Extra '{ex}'")
+
+def validate_forced_prefix(error_prefix: str, field: str):
+    if field == "":
+        return
+
+    ok, reason = is_hex_byte(field)
+    if not ok:
+        add_error(error_prefix, f"Invalid ForcedPrefix '{field}': {reason}");
+
+def validate_support(error_prefix: str, field: str):
+    xs = [x for x in field.split(',')]
+    if len(xs) != 2:
+        add_error(error_prefix, f"Invalid Support: expected exactly 2 fields, got {len(xs)}")
+        return
+
+    valid_64 = [ "V", "I", "NE", "NP", "NI", "NS" ]
+    valid_legacy = [ "V", "I", "NE" ]
+
+    if xs[0] not in valid_64:
+        add_error(error_prefix, f"Invalid 64-bit Support field: {xs[0]}")
+
+    if xs[1] not in valid_legacy:
+        add_error(error_prefix, f"Invalid legacy Support field: {xs[1]}")
+
+def validate_file(file_name: str):
     with open(file_name, "r") as file:
+        # TODO: report line numbers in errors
         reader = csv.DictReader(file, first_row, dialect=tsv)
         head = reader.__next__()
 
         global errors
+
         initial_len = len(errors)
 
         for key, val in head.items():
-            if val == None:
-                add_error(file_name, "Missing header '%s'" % key)
+            if val is None:
+                add_error(file_name, f"Missing header '{key}'")
             elif key != val:
-                add_error(file_name, "Expected header '%s', got '%s'" % (key, val))
+                add_error(file_name, f"Expected header '{key}', got '{val}'")
 
         if initial_len != len(errors):
             return
 
         for row in reader:
-            if row['Opcode'] == None:
+            if row['Opcode'] is None:
                 add_error(file_name, "Opcode is missing")
-            for op in row['Opcode'].split(','):
-                try: int(op, 16)
-                except ValueError:
-                    add_error(file_name, "Opcode %s is not a valid hex number" % op)
+                continue
+
+            validate_opcode(file_name, row['Opcode'])
             validate_operand(file_name, row['Operand1'])
             validate_operand(file_name, row['Operand2'])
             validate_operand(file_name, row['Operand3'])
             validate_operand(file_name, row['Operand4'])
-            validate_modifier(file_name, row['Modifier'])
+            validate_operand_encoding(file_name, row['OperandEncoding'])
+            validate_extra(file_name, row['Extra'])
             validate_forced_prefix(file_name, row['ForcedPrefix'])
+            validate_support(file_name, row['Support'])
 
 if __name__ == '__main__':
     for file_name in argv[1:]:
-        if file_name.startswith("encodings/") and file_name.endswith(".tsv"):
-            l = len(errors)
-            validate_file(file_name)
-            if l == len(errors):
-                print(file_name + ": Ok!")
+        l = len(errors)
+        validate_file(file_name)
+        if l == len(errors):
+            print(file_name + ": Ok!")
     for e in errors:
         print(e)
     exit(exit_code)

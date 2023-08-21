@@ -1,6 +1,14 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
-F6	Eb				/5	
-F7	Ev				/5	
-0F,AF	Gv	Ev			/r	
-6B	Gv	Ev	Ib		/r	
-69	Gv	Ev	Iz		/r	
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+F6/5	rm8				M			V,V
+F7/5	rm16				M	OperandSizeOverride		V,V
+F7/5	rm32				M			V,V
+F7/5	rm64				M	REX.W		V,NE
+0F,AF	r16	rm16			RM	OperandSizeOverride		V,V
+0F,AF	r32	rm32			RM			V,V
+0F,AF	r64	rm64			RM	REX.W		V,NE
+6B	r16	rm16	imm8		RMI	OperandSizeOverride		V,V
+6B	r32	rm32	imm8		RMI			V,V
+6B	r64	rm64	imm8		RMI	REX.W		V,NE
+69	r16	rm16	imm16		RMI	OperandSizeOverride		V,V
+69	r32	rm32	imm32		RMI			V,V
+69	r64	rm64	imm32		RMI	REX.W		V,NE

@@ -1,2 +1,3 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	Modifier	ForcedPrefix
-0F,8B	Jz					
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+0F,8B	rel16,Signed				D	OperandSizeOverride		NS,V
+0F,8B	rel32,Signed				D			V,V

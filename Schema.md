@@ -1,24 +1,65 @@
-In the `encodings` folder there are `tsv` files named for each (currently transcribed) instruction encoding.
+# `Opcode`
 
-The first row contains the names of the fields
----
- - Opcode
-   The hexadecimal opcode for the instruction. May be up to 3 comma separated bytes.
+A comma separated list of 2 digit hexadecimal digits. The digits `A` through `F` will always be capitalized.
 
- - Operand1, Operand2, Operand3, Operand4
-   The encodings of the operands to the instruction.
+May end with:
+ - `+`: to indicate that a register id must be added to the Opcode
+ - `/0`, `/1`, `/2`, `/3`, `/4`, `/5`, `/6`, `/7`: an extension of the opcode to be encoded in the `R` field of the ModRM byte
 
-   Unused operands will be encoded with an empty cell. (This can be used to count the number of operands an instruction has)
+# `Operand1`, `Operand2`, `Operand3`, `Operand4`
 
-   The format of these encodings is the same as described in the `Intel® 64 and IA-32 Architectures Software Developer’s Manual`, Volume 2, Appendix A.2.1 and A.2.2, but with the following additional notation:
-    - `%`: The operand is a general register and the lower 3 bits of the register id (given in `registers.tsv`) is added to the opcode. For registers with id >=8 (i.e. `r8`-`r15`) the 4th bit is encoded in the `REX` prefix.
-    - `$`: Followed by a specific register name means that this instruction only operates on this register for this encoding
+The operands of the instruction, maybe followed by a comma and a `Signed` or `Unsigned` attribute.
 
- - Modifier
-    Additional encoding information not present in the Opcode nor Operands.
+ - `al`, `ax`, `eax`, `rax`: The a register
+ - `r8`, `r16`, `r32`, `r64`: A general-purpose register of the given bit width
+ - `rm8`, `rm16`, `rm32`, `rm64`: Either a general-purpose register or memory operand of the given bit width
+ - `Sreg`: A segment register
+ - `moffs8`, `moffs16`, `moffs32`, `moffs64`: A memory offset of the given bit width (TODO: Elaborate on this)
+ - `imm8`, `imm16`, `imm32`, `imm64`: An immediate of the given bit width
 
-    The format is the same as described in the `Intel® 64 and IA-32 Architectures Software Developer’s Manual Volume 2` in Chapter `3.1.1.1`. A summary is provided here for convenience.
-     - `/0`, `/1`, `/2`, `/3`, `/4`, `/5`, `/6` `/7`: The 3 `reg` bits of the ModRM byte are an extension of the opcode, rather than an operand. The extension is given by the digit after the slash. i.e. `/3` -> `reg = 0b011`.
 
- - ForcedPrefix
-   - Some instructions have a mandatory prefix that can't just be prepended to the Opcode field. e.g. `popcnt`
+The `Signed` or `Unsigned` attribute documents things such as implicit sign/zero extension e.g. in `C7 mov rm64, imm32`
+
+# `OperandEncoding`
+
+Indicates how the operands of the instruction are encoded. Corresponds to the table after the opcodes in the intel manual.
+
+ - `RM`: the ModRM byte is needed to encode this instruction and the `R` field is the first operand and the `M` field is the second
+ - `MR`: the ModRM byte is needed to encode this instruction and the `M` field is the first operand and the `R` field is the second
+ - `FD`: (TODO)
+ - `TD`: (TODO)
+ - `OI`: The register id of the first operand is added to the Opcode and immediate follows
+ - `MI`: the ModRM byte is needed to encode this instruction and the `M` field is the first operand. The `R` field is given by the `Opcode` extension field. Immediate data follows.
+ - `M`: the ModRM byte is needed to encode this instruction and the `M` field is the operand. The `R` field is given by the `Opcode` extension field.
+ - `O`: The register id of the operand is added to the Opcode
+ - `ZO`: No operands
+
+# `Extra`
+
+Additional data needed to encode the instruction or additional information about what the operation will do
+
+ - `OperandSizeOverride`: the "operand-size override" prefix `66H` is needed to encode this instruction
+ - `AddressSizeOverride`: the "address-size override" prefix `67H` is needed to encode this instruction
+ - `REX.W`: the "W" bit of the REX prefix should be present
+
+# `ForcedPrefix`
+
+A prefix that if present goes before any REX prefix
+
+# `Support`
+
+64-bit and Legacy mode support
+
+The first item indicates 64-bit support:
+
+ - `V`: Valid, supported
+ - `I`: Invalid, not supported
+ - `NE`: Not encodable
+ - `NP`: REX prefix does not affect the legacy instruction
+ - `NI`: This encoding is a different instruction in 64-bit mode
+ - `NS`: "Indicates an instruction syntax that requires an address override prefix in 64-bit mode and is not supported. Using an address override prefix in 64-bit mode may result in model-sepcific execution behavior"
+
+The second item indicates Compatability/Legacy mode support
+ - `V`: Valid, supported
+ - `I`: Invalid, not supported
+ - `NE`: "Indicates an Intel 64 instruction mnemonics/syntax that is not encodable; the opcode sequence is not applicable as an individual instruction in compatibility mode or IA-32 mode. The opcode may represent a valid sequence of legacy IA-32 instructions"

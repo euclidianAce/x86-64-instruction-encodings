@@ -1,6 +1,0 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-9A	ptr16:16				D			I,V
-9A	ptr16:32				D			I,V
-FF/3	m16:16,Unsigned				M			V,V
-FF/3	m16:32,Unsigned				M			V,V
-FF/3	m16:64				M			V,NE

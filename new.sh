@@ -2,7 +2,7 @@
 set -e
 
 while [[ ! -z "$1" ]]; do
-	name="new-encodings/$1.tsv"
+	name="encodings/$1.tsv"
 
 	if [ -e "$name" ]; then
 		echo "$name already exists!" 1>&2

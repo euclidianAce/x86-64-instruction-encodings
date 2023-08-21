@@ -1,2 +1,0 @@
-Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-7C	rel8,Signed				D			V,V
