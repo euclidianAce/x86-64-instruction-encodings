@@ -1,4 +1,4 @@
-Register	Id	Size
+Register	Id	Size	Extra
 al	0	1
 ax	0	2
 eax	0	4
@@ -16,18 +16,22 @@ bx	3	2
 ebx	3	4
 rbx	3	8
 ah	4	1
+spl	4	1	REX
 sp	4	2
 esp	4	4
 rsp	4	8
 ch	5	1
+bpl	5	1	REX
 bp	5	2
 ebp	5	4
 rbp	5	8
 dh	6	1
+sil	6	1	REX
 si	6	2
 esi	6	4
 rsi	6	8
 bh	7	1
+dil	7	1	REX
 di	7	2
 edi	7	4
 rdi	7	8
