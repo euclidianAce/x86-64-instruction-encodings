@@ -31,7 +31,7 @@ and unsigned comparisons as outlined in the table below:
 
 ## Mnemonics with corresponding `encodings/*.tsv` files
 
-Only the first of each of the listed conditions mnemonics has a corresponding `encodings/*.tsv` file. For quick reference, they are listed here:
+Conditional instructions will only have `encodings/*.tsv` files for the first column in this table.
 
 | Instruction Suffix and Meaning | Alternative 1              | Alternative 2              | Offset Added to Opcode |
 | -----------------------------  | -------------------------  | -------------------------- | ---------------------- |
