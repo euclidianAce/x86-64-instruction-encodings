@@ -6,7 +6,7 @@ if above)). This document enumerates each condition that is tested and each
 mnemonic that tests it.
 
 # `above` vs `greater` etc.
-Certain flags will be describe with words that appear to mean the same thing,
+Certain flags will be described with words that appear to mean the same thing,
 such as `above` and `greater`, or `below` and `less`. These refer to the signed
 and unsigned comparisons as outlined in the table below:
 
