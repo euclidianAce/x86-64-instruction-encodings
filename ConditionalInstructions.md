@@ -33,24 +33,24 @@ and unsigned comparisons as outlined in the table below:
 
 Only the first of each of the listed conditions mnemonics has a corresponding `encodings/*.tsv` file. For quick reference, they are listed here:
 
-| Short Name/Instruction Suffix | Offset added to opcode | Meaning |
-| ----- | ---- | ------------ |
-| `o`   | `0`  | Overflow |
-| `no`  | `1`  | Not Overflow |
-| `c`   | `2`  | Carry |
-| `nc`  | `3`  | Not Carry |
-| `z`   | `4`  | Zero |
-| `nz`  | `5`  | Not Zero |
-| `be`  | `6`  | Below or Equal (Unsigned) |
-| `a`   | `7`  | Above (Unsigned) |
-| `s`   | `8`  | Sign |
-| `ns`  | `9`  | Not Sign |
-| `p`   | `10` | Parity (Even) |
-| `np`  | `11` | Not Parity (Odd) |
-| `l`   | `12` | Less (Signed) |
-| `ge`  | `13` | Greater or Equal (Signed) |
-| `le`  | `14` | Less or Equal (Signed)  |
-| `g`   | `15` | Greater (Signed) |
+| Instruction Suffix and Meaning | Alternative 1              | Alternative 2              | Offset Added to Opcode |
+| -----------------------------  | -------------------------  | -------------------------- | ---------------------- |
+| `o`   Overflow                 |                            |                            | 0                      |
+| `no`  Not Overflow             |                            |                            | 1                      |
+| `c`   Carry                    | `b`   Below                | `nae` Not Above or Equal   | 2                      |
+| `nc`  Not Carry                | `nb`  Not Below            | `ae`  Above or Equal       | 3                      |
+| `z`   Zero                     | `e`   Equal                |                            | 4                      |
+| `nz`  Not Zero                 | `ne`  Not Equal            |                            | 5                      |
+| `be`  Below or Equal           | `na`  Not Above            |                            | 6                      |
+| `a`   Above                    | `nbe` Not Below or Equal   |                            | 7                      |
+| `s`   Sign                     |                            |                            | 8                      |
+| `ns`  Not Sign                 |                            |                            | 9                      |
+| `p`   Parity                   | `pe`  Parity Even          |                            | 10                     |
+| `np`  Not Parity               | `po`  Parity Odd           |                            | 11                     |
+| `l`   Less                     | `nge` Not Greater or Equal |                            | 12                     |
+| `ge`  Greater or Equal         | `nl`  Not Less             |                            | 13                     |
+| `le`  Less or Equal            | `ng`  Not Greater          |                            | 14                     |
+| `g`   Greater                  | `nle` Not Less or Equal    |                            | 15                     |
 
 ## Conditions with mnemonics
  - `CF` = 0
