@@ -1,6 +1,6 @@
-# `Jcc` and `SETcc`: Jump and Set Byte on Condition
+# Conditional Instructions (`Jcc`, `SETcc`, `MOVcc`, etc.)
 
-`Jcc` and `SETcc` instruction mnemonics will often describe the same underlying
+Conditional instruction mnemonics will often describe the same underlying
 instruction (e.g. `jnbe` (jump if not below or equal) is the same as `ja` (jump
 if above)). This document enumerates each condition that is tested and each
 mnemonic that tests it.
