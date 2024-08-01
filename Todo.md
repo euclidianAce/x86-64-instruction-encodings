@@ -202,7 +202,7 @@
 - [x] LEA — Load Effective Address
 - [x] LEAVE — High Level Procedure Exit
 - [ ] LFENCE — Load Fence
-- [ ] LGDT/LIDT — Load Global/Interrupt Descriptor Table Register
+- [x] LGDT/LIDT — Load Global/Interrupt Descriptor Table Register
 - [ ] LLDT — Load Local Descriptor Table Register
 - [ ] LMSW — Load Machine Status Word
 - [ ] LOCK — Assert LOCK# Signal Prefix
@@ -389,7 +389,7 @@
 - [ ] SCAS/SCASB/SCASW/SCASD — Scan String
 - [x] SETcc — Set Byte on Condition
 - [ ] SFENCE — Store Fence
-- [ ] SGDT — Store Global Descriptor Table Register
+- [x] SGDT — Store Global Descriptor Table Register
 - [ ] SHA1RNDS4 — Perform Four Rounds of SHA1 Operation
 - [ ] SHA1NEXTE — Calculate SHA1 State Variable E after Four Rounds
 - [ ] SHA1MSG1 — Perform an Intermediate Calculation for the Next Four SHA1 Message Dwords
