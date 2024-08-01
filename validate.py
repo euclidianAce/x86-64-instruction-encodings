@@ -80,6 +80,7 @@ def validate_operand(error_prefix: str, field: str):
         "cx",
         "ecx",
         "rcx",
+        "dx",
         "al",
         "ax",
         "eax",

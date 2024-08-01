@@ -170,7 +170,7 @@
 - [ ] HSUBPS — Packed Single-FP Horizontal Subtract
 - [x] IDIV — Signed Divide
 - [x] IMUL — Signed Multiply
-- [ ] IN — Input from Port
+- [x] IN — Input from Port
 - [x] INC — Increment by 1
 - [ ] INS/INSB/INSW/INSD — Input from Port to String
 - [ ] INSERTPS — Insert Scalar Single-Precision Floating-Point Value
@@ -273,7 +273,7 @@
 - [x] OR — Logical Inclusive OR
 - [ ] ORPD — Bitwise Logical OR of Packed Double Precision Floating-Point Values
 - [ ] ORPS — Bitwise Logical OR of Packed Single Precision Floating-Point Values
-- [ ] OUT — Output to Port
+- [x] OUT — Output to Port
 - [ ] OUTS/OUTSB/OUTSW/OUTSD — Output String to Port
 - [ ] PABSB/PABSW/PABSD/PABSQ — Packed Absolute Value
 - [ ] PACKSSWB/PACKSSDW — Pack with Signed Saturation

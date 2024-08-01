@@ -1,0 +1,7 @@
+Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
+E6	imm8	al			I			V,V
+E7	imm8	ax			I			V,V
+E7	imm8	eax			I			V,V
+EE	dx	al			ZO			V,V
+EF	dx	ax			ZO			V,V
+EF	dx	eax			ZO			V,V
