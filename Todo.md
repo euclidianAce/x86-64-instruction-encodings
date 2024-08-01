@@ -203,7 +203,7 @@
 - [x] LEAVE — High Level Procedure Exit
 - [ ] LFENCE — Load Fence
 - [x] LGDT/LIDT — Load Global/Interrupt Descriptor Table Register
-- [ ] LLDT — Load Local Descriptor Table Register
+- [x] LLDT — Load Local Descriptor Table Register
 - [ ] LMSW — Load Machine Status Word
 - [ ] LOCK — Assert LOCK# Signal Prefix
 - [ ] LODS/LODSB/LODSW/LODSD/LODSQ — Load String
