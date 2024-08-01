@@ -45,10 +45,10 @@
 - [ ] BSF — Bit Scan Forward
 - [ ] BSR — Bit Scan Reverse
 - [x] BSWAP — Byte Swap
-- [ ] BT — Bit Test
-- [ ] BTC — Bit Test and Complement
-- [ ] BTR — Bit Test and Reset
-- [ ] BTS — Bit Test and Set
+- [x] BT — Bit Test
+- [x] BTC — Bit Test and Complement
+- [x] BTR — Bit Test and Reset
+- [x] BTS — Bit Test and Set
 - [ ] BZHI — Zero High Bits Starting with Specified Bit Position
 - [x] CALL — Call Procedure
 - [x] CBW/CWDE/CDQE — Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
