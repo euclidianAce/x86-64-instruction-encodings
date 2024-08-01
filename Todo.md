@@ -44,7 +44,7 @@
 - [ ] BOUND — Check Array Index Against Bounds
 - [ ] BSF — Bit Scan Forward
 - [ ] BSR — Bit Scan Reverse
-- [ ] BSWAP — Byte Swap
+- [x] BSWAP — Byte Swap
 - [ ] BT — Bit Test
 - [ ] BTC — Bit Test and Complement
 - [ ] BTR — Bit Test and Reset
@@ -61,7 +61,7 @@
 - [ ] CLTS — Clear Task-Switched Flag in CR0
 - [ ] CLWB — Cache Line Write Back
 - [x] CMC — Complement Carry Flag
-- [ ] CMOVcc — Conditional Move
+- [x] CMOVcc — Conditional Move
 - [x] CMP — Compare Two Operands
 - [ ] CMPPD — Compare Packed Double-Precision Floating-Point Values
 - [ ] CMPPS — Compare Packed Single-Precision Floating-Point Values
