@@ -72,7 +72,7 @@
 - [ ] CMPXCHG8B/CMPXCHG16B — Compare and Exchange Bytes
 - [ ] COMISD — Compare Scalar Ordered Double-Precision Floating-Point Values and Set EFLAGS
 - [ ] COMISS — Compare Scalar Ordered Single-Precision Floating-Point Values and Set EFLAGS
-- [ ] CPUID — CPU Identification
+- [x] CPUID — CPU Identification
 - [ ] CRC32 — Accumulate CRC32 Value
 - [ ] CVTDQ2PD — Convert Packed Doubleword Integers to Packed Double-Precision Floating-Point Values
 - [ ] CVTDQ2PS — Convert Packed Doubleword Integers to Packed Single-Precision Floating-Point Values
@@ -370,8 +370,8 @@
 - [ ] RDPMC — Read Performance-Monitoring Counters
 - [ ] RDRAND — Read Random Number
 - [ ] RDSEED — Read Random SEED
-- [ ] RDTSC — Read Time-Stamp Counter
-- [ ] RDTSCP — Read Time-Stamp Counter and Processor ID
+- [x] RDTSC — Read Time-Stamp Counter
+- [x] RDTSCP — Read Time-Stamp Counter and Processor ID
 - [ ] REP/REPE/REPZ/REPNE/REPNZ — Repeat String Operation Prefix
 - [x] RET — Return from Procedure
 - [ ] RORX — Rotate Right Logical Without Affecting Flags
