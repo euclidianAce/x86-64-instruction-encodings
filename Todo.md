@@ -401,8 +401,8 @@
 - [ ] SHRD — Double Precision Shift Right
 - [ ] SHUFPD — Packed Interleave Shuffle of Pairs of Double-Precision Floating-Point Values
 - [ ] SHUFPS — Packed Interleave Shuffle of Quadruplets of Single-Precision Floating-Point Values
-- [ ] SIDT — Store Interrupt Descriptor Table Register
-- [ ] SLDT — Store Local Descriptor Table Register
+- [x] SIDT — Store Interrupt Descriptor Table Register
+- [x] SLDT — Store Local Descriptor Table Register
 - [ ] SMSW — Store Machine Status Word
 - [ ] SQRTPD — Square Root of Double-Precision Floating-Point Values
 - [ ] SQRTPS — Square Root of Single-Precision Floating-Point Values
