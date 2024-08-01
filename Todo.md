@@ -174,7 +174,7 @@
 - [x] INC — Increment by 1
 - [ ] INS/INSB/INSW/INSD — Input from Port to String
 - [ ] INSERTPS — Insert Scalar Single-Precision Floating-Point Value
-- [ ] INT n/INTO/INT 3 — Call to Interrupt Procedure
+- [x] INT n/INTO/INT 3 — Call to Interrupt Procedure
 - [ ] INVD — Invalidate Internal Caches
 - [ ] INVLPG — Invalidate TLB Entries
 - [ ] INVPCID — Invalidate Process-Context Identifier
