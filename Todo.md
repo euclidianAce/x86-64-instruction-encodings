@@ -357,7 +357,7 @@
 - [ ] PUNPCKHBW/PUNPCKHWD/PUNPCKHDQ/PUNPCKHQDQ —  Unpack High Data
 - [ ] PUNPCKLBW/PUNPCKLWD/PUNPCKLDQ/PUNPCKLQDQ — Unpack Low Data
 - [x] PUSH — Push Word, Doubleword or Quadword Onto the Stack
-- [ ] PUSHA/PUSHAD — Push All General-Purpose Registers
+- [x] PUSHA/PUSHAD — Push All General-Purpose Registers
 - [ ] PUSHF/PUSHFD — Push EFLAGS Register onto the Stack
 - [ ] PXOR — Logical Exclusive OR
 - [ ] RCL/RCR/ROL/ROR — Rotate

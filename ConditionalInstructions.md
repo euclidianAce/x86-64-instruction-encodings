@@ -33,24 +33,26 @@ and unsigned comparisons as outlined in the table below:
 
 Conditional instructions will only have `encodings/*.tsv` files for the first column in this table.
 
-| Instruction Suffix and Meaning | Alternative 1              | Alternative 2              | Offset Added to Opcode |
-| -----------------------------  | -------------------------  | -------------------------- | ---------------------- |
-| `o`   Overflow                 |                            |                            | 0                      |
-| `no`  Not Overflow             |                            |                            | 1                      |
-| `c`   Carry                    | `b`   Below                | `nae` Not Above or Equal   | 2                      |
-| `nc`  Not Carry                | `nb`  Not Below            | `ae`  Above or Equal       | 3                      |
-| `z`   Zero                     | `e`   Equal                |                            | 4                      |
-| `nz`  Not Zero                 | `ne`  Not Equal            |                            | 5                      |
-| `be`  Below or Equal           | `na`  Not Above            |                            | 6                      |
-| `a`   Above                    | `nbe` Not Below or Equal   |                            | 7                      |
-| `s`   Sign                     |                            |                            | 8                      |
-| `ns`  Not Sign                 |                            |                            | 9                      |
-| `p`   Parity                   | `pe`  Parity Even          |                            | 10                     |
-| `np`  Not Parity               | `po`  Parity Odd           |                            | 11                     |
-| `l`   Less                     | `nge` Not Greater or Equal |                            | 12                     |
-| `ge`  Greater or Equal         | `nl`  Not Less             |                            | 13                     |
-| `le`  Less or Equal            | `ng`  Not Greater          |                            | 14                     |
-| `g`   Greater                  | `nle` Not Less or Equal    |                            | 15                     |
+∧∨⊕
+
+| Instruction Suffix and Meaning | Alternative 1              | Alternative 2              | Offset Added to Opcode | Status Flags         |
+| -----------------------------  | -------------------------  | -------------------------- | ---------------------- | -------------------- |
+| `o`   Overflow                 |                            |                            | 0                      | `OF = 1`             |
+| `no`  Not Overflow             |                            |                            | 1                      | `OF = 0`             |
+| `c`   Carry                    | `b`   Below                | `nae` Not Above or Equal   | 2                      | `CF = 1`             |
+| `nc`  Not Carry                | `nb`  Not Below            | `ae`  Above or Equal       | 3                      | `CF = 0`             |
+| `z`   Zero                     | `e`   Equal                |                            | 4                      | `ZF = 1`             |
+| `nz`  Not Zero                 | `ne`  Not Equal            |                            | 5                      | `ZF = 0`             |
+| `be`  Below or Equal           | `na`  Not Above            |                            | 6                      | `CF ∨ ZF = 0`        |
+| `a`   Above                    | `nbe` Not Below or Equal   |                            | 7                      | `CF ∨ ZF = 1`        |
+| `s`   Sign                     |                            |                            | 8                      | `SF = 1`             |
+| `ns`  Not Sign                 |                            |                            | 9                      | `SF = 0`             |
+| `p`   Parity                   | `pe`  Parity Even          |                            | 10                     | `PF = 1`             |
+| `np`  Not Parity               | `po`  Parity Odd           |                            | 11                     | `PF = 0`             |
+| `l`   Less                     | `nge` Not Greater or Equal |                            | 12                     | `SF ⊕ OF = 1`        |
+| `ge`  Greater or Equal         | `nl`  Not Less             |                            | 13                     | `SF ⊕ OF = 0`        |
+| `le`  Less or Equal            | `ng`  Not Greater          |                            | 14                     | `(SF ⊕ OF) ∨ ZF = 1` |
+| `g`   Greater                  | `nle` Not Less or Equal    |                            | 15                     | `(SF ⊕ OF) ∨ ZF = 0` |
 
 ## Conditions with mnemonics
  - `CF` = 0
