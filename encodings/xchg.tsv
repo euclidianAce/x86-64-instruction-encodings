@@ -1,15 +1,15 @@
 Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-90	ax	r16			O	OperandSizeOverride		V,V
-90	r16	ax			O	OperandSizeOverride		V,V
-90	eax	r32			O			V,V
-90	r32	eax			O			V,V
-90	rax	r64			O	REX.W		V,NE
-90	r64	rax			O	REX.W		V,NE
-86	rm8	r8			MR			V,V
-86	r8	rm8			RM			V,V
-87	rm16	r16			MR	OperandSizeOverride		V,V
-87	r16	rm16			RM	OperandSizeOverride		V,V
-87	rm32	r32			MR			V,V
-87	r32	rm32			RM			V,V
-87	rm64	r64			MR	REX.W		V,NE
-87	r64	rm64			RM	REX.W		V,NE
+90	ax,Write	r16,Write			O	OperandSizeOverride		V,V
+90	r16,Write	ax,Write			O	OperandSizeOverride		V,V
+90	eax,Write	r32,Write			O			V,V
+90	r32,Write	eax,Write			O			V,V
+90	rax,Write	r64,Write			O	REX.W		V,NE
+90	r64,Write	rax,Write			O	REX.W		V,NE
+86	rm8,Write	r8,Write			MR			V,V
+86	r8,Write	rm8,Write			RM			V,V
+87	rm16,Write	r16,Write			MR	OperandSizeOverride		V,V
+87	r16,Write	rm16,Write			RM	OperandSizeOverride		V,V
+87	rm32,Write	r32,Write			MR			V,V
+87	r32,Write	rm32,Write			RM			V,V
+87	rm64,Write	r64,Write			MR	REX.W		V,NE
+87	r64,Write	rm64,Write			RM	REX.W		V,NE

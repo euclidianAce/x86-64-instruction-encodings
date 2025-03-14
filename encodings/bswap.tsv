@@ -1,3 +1,3 @@
 Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-0F,C8	r32				O			V,V
-0F,C8	r64				O	REX.W		V,NE
+0F,C8	r32,Write				O			V,V
+0F,C8	r64,Write				O	REX.W		V,NE

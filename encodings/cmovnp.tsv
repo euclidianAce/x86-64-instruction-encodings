@@ -1,4 +1,4 @@
 Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-0F,4B	r16	rm16			RM	OperandSizeOverride		V,V
-0F,4B	r32	rm32			RM			V,V
-0F,4B	r64	rm64			RM	REX.W		V,NE
+0F,4B	r16,Write	rm16			RM	OperandSizeOverride		V,V
+0F,4B	r32,Write	rm32			RM			V,V
+0F,4B	r64,Write	rm64			RM	REX.W		V,NE

@@ -1,7 +1,7 @@
 Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-E4	al	imm8			I			V,V
-E5	ax	imm8			I			V,V
-E5	eax	imm8			I			V,V
-EC	al	dx			ZO			V,V
-ED	ax	dx			ZO			V,V
-ED	eax	dx			ZO			V,V
+E4	al,Write	imm8			I			V,V
+E5	ax,Write	imm8			I			V,V
+E5	eax,Write	imm8			I			V,V
+EC	al,Write	dx			ZO			V,V
+ED	ax,Write	dx			ZO			V,V
+ED	eax,Write	dx			ZO			V,V

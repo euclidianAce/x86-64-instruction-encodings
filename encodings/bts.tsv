@@ -1,7 +1,7 @@
 Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-0F,AB	rm16	r16			MR	OperandSizeOverride		V,V
-0F,AB	rm32	r32			MR			V,V
-0F,AB	rm64	r64			MR	REX.W		V,NE
-0F,BA/5	rm16	imm8			MI	OperandSizeOverride		V,V
-0F,BA/5	rm32	imm8			MI			V,V
-0F,BA/5	rm64	imm8			MI	REX.W		V,NE
+0F,AB	rm16,Write	r16			MR	OperandSizeOverride		V,V
+0F,AB	rm32,Write	r32			MR			V,V
+0F,AB	rm64,Write	r64			MR	REX.W		V,NE
+0F,BA/5	rm16,Write	imm8			MI	OperandSizeOverride		V,V
+0F,BA/5	rm32,Write	imm8			MI			V,V
+0F,BA/5	rm64,Write	imm8			MI	REX.W		V,NE

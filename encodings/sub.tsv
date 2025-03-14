@@ -1,20 +1,20 @@
 Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-2C	al	imm8			I			V,V
-2D	ax	imm16			I	OperandSizeOverride		V,V
-2D	eax	imm32			I			V,V
-2D	rax	imm32,Signed			I	REX.W		V,NE
-80/5	rm8	imm8			MI			V,V
-81/5	rm16	imm16			MI	OperandSizeOverride		V,V
-81/5	rm32	imm32			MI			V,V
-81/5	rm64	imm32,Signed			MI	REX.W		V,NE
-83/5	rm16	imm8,Signed			MI	OperandSizeOverride		V,V
-83/5	rm32	imm8,Signed			MI			V,V
-83/5	rm64	imm8,Signed			MI	REX.W		V,NE
-28	rm8	r8			MR			V,V
-29	rm16	r16			MR	OperandSizeOverride		V,V
-29	rm32	r32			MR			V,V
-29	rm64	r64			MR	REX.W		V,NE
-2A	r8	rm8			RM			V,V
-2B	r16	rm16			RM	OperandSizeOverride		V,V
-2B	r32	rm32			RM			V,V
-2B	r64	rm64			RM	REX.W		V,NE
+2C	al,Write	imm8			I			V,V
+2D	ax,Write	imm16			I	OperandSizeOverride		V,V
+2D	eax,Write	imm32			I			V,V
+2D	rax,Write	imm32,Signed			I	REX.W		V,NE
+80/5	rm8,Write	imm8			MI			V,V
+81/5	rm16,Write	imm16			MI	OperandSizeOverride		V,V
+81/5	rm32,Write	imm32			MI			V,V
+81/5	rm64,Write	imm32,Signed			MI	REX.W		V,NE
+83/5	rm16,Write	imm8,Signed			MI	OperandSizeOverride		V,V
+83/5	rm32,Write	imm8,Signed			MI			V,V
+83/5	rm64,Write	imm8,Signed			MI	REX.W		V,NE
+28	rm8,Write	r8			MR			V,V
+29	rm16,Write	r16			MR	OperandSizeOverride		V,V
+29	rm32,Write	r32			MR			V,V
+29	rm64,Write	r64			MR	REX.W		V,NE
+2A	r8,Write	rm8			RM			V,V
+2B	r16,Write	rm16			RM	OperandSizeOverride		V,V
+2B	r32,Write	rm32			RM			V,V
+2B	r64,Write	rm64			RM	REX.W		V,NE

@@ -110,17 +110,23 @@ def validate_operand(error_prefix: str, field: str):
         "1",
     ]
 
-    valid_attributes = [ "Signed", "Unsigned" ]
+    valid_attributes = [ "Signed", "Unsigned", "Write" ]
 
     xs = [x for x in field.split(',')]
-    if len(xs) > 2:
+    if len(xs) > 3:
         add_error(error_prefix, "Too many fields in operand")
 
     if xs[0] not in valid_operands:
         add_error(error_prefix, f"Invalid operand '{xs[0]}'")
 
-    if len(xs) > 1 and xs[1] not in valid_attributes:
-        add_error(error_prefix, f"Invalid operand attribute '{xs[1]}'")
+    seen = set()
+    for x in xs[1:]:
+        if x not in valid_attributes:
+            add_error(error_prefix, f"Invalid operand attribute '{x}'")
+        elif x in seen:
+            add_error(error_prefix, f"Duplicate operand attribute '{x}'")
+        else:
+            seen = {*seen, x}
 
 def validate_operand_encoding(error_prefix: str, field: str):
     valid_operand_encodings = [

@@ -1,13 +1,13 @@
 Opcode	Operand1	Operand2	Operand3	Operand4	OperandEncoding	Extra	ForcedPrefix	Support
-D0/5	rm8,Unsigned	1			M1			V,V
-D1/5	rm16,Unsigned	1			M1	OperandSizeOverride		V,V
-D1/5	rm32,Unsigned	1			M1			V,V
-D1/5	rm64,Unsigned	1			M1	REX.W		V,NE
-D2/5	rm8,Unsigned	cl,Unsigned			MC			V,V
-D3/5	rm16,Unsigned	cl,Unsigned			MC	OperandSizeOverride		V,V
-D3/5	rm32,Unsigned	cl,Unsigned			MC			V,V
-D3/5	rm64,Unsigned	cl,Unsigned			MC	REX.W		V,NE
-C0/5	rm8,Unsigned	imm8,Unsigned			MI			V,V
-C1/5	rm16,Unsigned	imm8,Unsigned			MI	OperandSizeOverride		V,V
-C1/5	rm32,Unsigned	imm8,Unsigned			MI			V,V
-C1/5	rm64,Unsigned	imm8,Unsigned			MI	REX.W		V,NE
+D0/5	rm8,Write,Unsigned	1			M1			V,V
+D1/5	rm16,Write,Unsigned	1			M1	OperandSizeOverride		V,V
+D1/5	rm32,Write,Unsigned	1			M1			V,V
+D1/5	rm64,Write,Unsigned	1			M1	REX.W		V,NE
+D2/5	rm8,Write,Unsigned	cl,Unsigned			MC			V,V
+D3/5	rm16,Write,Unsigned	cl,Unsigned			MC	OperandSizeOverride		V,V
+D3/5	rm32,Write,Unsigned	cl,Unsigned			MC			V,V
+D3/5	rm64,Write,Unsigned	cl,Unsigned			MC	REX.W		V,NE
+C0/5	rm8,Write,Unsigned	imm8,Unsigned			MI			V,V
+C1/5	rm16,Write,Unsigned	imm8,Unsigned			MI	OperandSizeOverride		V,V
+C1/5	rm32,Write,Unsigned	imm8,Unsigned			MI			V,V
+C1/5	rm64,Write,Unsigned	imm8,Unsigned			MI	REX.W		V,NE
